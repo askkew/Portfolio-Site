@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --glow-color: hsl(125, 100%, 69%);
+}
+
 ul {
   list-style: none;
 }

@@ -16,8 +16,8 @@ function App() {
         <Header/>
         <Home/>
         <About/>
-        <Experience/>
         <Projects/>
+        <Experience/>
         <Contact/>
         <Footer/>
       {/* </NavHelper> */}

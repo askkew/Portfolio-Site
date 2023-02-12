@@ -3,7 +3,7 @@ import { HashLink as Link } from "react-router-hash-link";
 import { FaAlignRight } from "react-icons/fa";
 import { styled } from "@mui/system";
 import { Button, Box } from "@mui/material";
-import './Headerstyles.css';
+import { StyledButton } from "../utils/Button";
 
 //#0a192f
 
@@ -41,7 +41,6 @@ const NavArea = styled('nav')({
   gap: "10rem",
 })
 
-
 const Header = () => {
 
   const navLinks = ["about", "projects", "experience", "contact"];
@@ -57,7 +56,9 @@ const Header = () => {
     return (
       <ul key={content}>
         <li>
-          <button className="glowing-btn" onClick={handleClickNav}><span className="glowing-txt">{content}</span></button>
+          <StyledButton className="glowing-btn" onClick={handleClickNav}>
+            <span className="glowing-txt">{content}</span>
+          </StyledButton>
         </li>
       </ul>
     );
