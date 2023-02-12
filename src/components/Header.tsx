@@ -35,10 +35,7 @@ const LogoButton = styled('div')({
 
 const NavArea = styled('nav')({
   display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  alignContents: "center",
-  gap: "10rem",
+  gap: "4rem",
 })
 
 const Header = () => {
@@ -67,20 +64,14 @@ const Header = () => {
     <HeaderBox>
       <Container>
         <NavContainer>
-          {/* <LogoButton>Home</LogoButton> */}
+          <LogoButton>Home</LogoButton>
           <NavArea>
             {navLinks.map((nav) => renderNavLink(nav))}
           </NavArea>
+          {/* <StyledButton className="glowing-btn">
+            <span className="glowing-txt">Resume</span>
+          </StyledButton> */}
         </NavContainer>
-        {/* <button class='glowing-btn'>
-          <span class='glowing-txt'>
-          C
-          <span class='faulty-letter'>
-          L
-          </span>
-          ICK
-          </span>
-          </button> */}
       </Container>
     </HeaderBox>
   );
