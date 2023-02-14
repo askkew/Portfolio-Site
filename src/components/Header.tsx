@@ -4,16 +4,18 @@ import { FaAlignRight } from "react-icons/fa";
 import { styled } from "@mui/system";
 import { Button, Box } from "@mui/material";
 import { StyledButton } from "../utils/Button";
+import { headerColor } from "../utils/content";
 
 //#0a192f
 
 const HeaderBox = styled('header')({
-  background: "black",
+  backdropFilter: 'blur(4px)',
+  background: 'transparent',
   color: "#e6f1ff",
   padding: "33px",
   position: "fixed",
   width: "100%",
-  height: "13%",
+  height: "10%",
   boxShadow: '0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%)',
 })
 
@@ -25,7 +27,7 @@ const Container = styled('div')({
 const NavContainer = styled('div')({
   display: "flex",
   alignContent: "center",
-  justifyContent: "space-between",
+  justifyContent: "center",
 })
 
 const LogoButton = styled('div')({
@@ -64,7 +66,6 @@ const Header = () => {
     <HeaderBox>
       <Container>
         <NavContainer>
-          <LogoButton>Home</LogoButton>
           <NavArea>
             {navLinks.map((nav) => renderNavLink(nav))}
           </NavArea>
