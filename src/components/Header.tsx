@@ -42,7 +42,7 @@ const NavArea = styled('nav')({
 
 const Header = () => {
 
-  const navLinks = ["about", "projects", "experience", "contact"];
+  const navLinks = ["about", "experience", "projects", "contact"];
 
   const renderNavLink = (content: any) => {
 

@@ -1,16 +1,8 @@
-import React from "react";
-import { styled } from "@mui/system";
 import { ContactCard, SocialButtons, NameTypograph, SubtitleTypograph, SubtitleTypograph2 } from "./ContactStyles";
-import { RowDiv } from "../../utils/content";
 import { IconButton, Button, Link, Typography } from "@mui/material";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
-import LabelImportantIcon from '@mui/icons-material/LabelImportant';
-
-const ContactSection = styled('div')({
-
-})
 
 const Contact = () => {
   return (
