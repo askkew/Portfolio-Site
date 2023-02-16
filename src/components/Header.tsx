@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { useEffect, useState } from "react";
+
 import { HashLink as Link } from "react-router-hash-link";
 import { FaAlignRight } from "react-icons/fa";
 import { styled } from "@mui/system";
@@ -17,6 +19,7 @@ const HeaderBox = styled('header')({
   width: "100%",
   height: "10%",
   boxShadow: '0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%)',
+  transition: 'top 0.3s',
 })
 
 const Container = styled('div')({
@@ -41,6 +44,19 @@ const NavArea = styled('nav')({
 })
 
 const Header = () => {
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      (document.getElementById("navbar")as HTMLInputElement).style.top = "0";
+    } else {
+      (document.getElementById("navbar")as HTMLInputElement).style.top = "-100px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+
+
+  //================================================================================================
 
   const navLinks = ["about", "experience", "projects", "contact"];
 
@@ -63,7 +79,7 @@ const Header = () => {
     );
   }
   return (
-    <HeaderBox>
+    <HeaderBox id="navbar">
       <Container>
         <NavContainer>
           <NavArea>

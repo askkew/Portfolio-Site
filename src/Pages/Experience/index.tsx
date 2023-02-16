@@ -4,7 +4,7 @@ import { LeftRowDiv, RightRowDiv } from "./ExperienceStyles";
 
 const Experience = () => {
   return (
-    <section id="experience">
+    <section id="experience" style={{  background: 'radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%)'}}>
       <LeftRowDiv>
         <h2>Experience</h2>
       </LeftRowDiv>

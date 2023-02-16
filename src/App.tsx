@@ -8,19 +8,22 @@ import Header from './components/Header';
 import Home from './Pages/Home';
 import Projects from './Pages/Projects';
 import Footer from './Pages/Footer';
+import ScrollButton from './components/scrolltop';
 
 function App() {
   return (
     <div>
-      {/* <NavHelper> */}
-        <Header/>
-        <Home/>
-        <About/>
-        <Experience/>
-        <Projects/>
-        <Contact/>
-        <Footer/>
-      {/* </NavHelper> */}
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+      <Header/>
+      <Home/>
+      <About/>
+      <Experience/>
+      <Projects/>
+      <Contact/>
+      <ScrollButton/>
+      <Footer/>
     </div>
   );
 }
