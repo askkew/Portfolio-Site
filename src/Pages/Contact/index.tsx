@@ -7,11 +7,11 @@ import EmailIcon from '@mui/icons-material/Email';
 const Contact = () => {
   return (
     <section id="contact" style={{  background: 'radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%)'}}>
-      <div style={{justifyContent: 'center', alignItems: 'center', alignContent: 'center'}}>
+      {/* <div style={{justifyContent: 'center', alignItems: 'center', alignContent: 'center'}}>
         <div id="stars"></div>
         <div id="stars2"></div>
         <div id="stars3"></div>
-      </div>
+      </div> */}
       <ContactDiv>
         <ContactCard>
           <NameTypograph>Before you go!</NameTypograph>

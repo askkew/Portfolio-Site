@@ -10,6 +10,15 @@ export const ButtonCircle = styled('div')({
   right: '275px',
   width: '50px',
   height: '50px',
+  '@media (max-width: 1600px)': {
+    right: '200px',
+  },
+  '@media (max-width: 1200px)': {
+    right: '120px',
+  },
+  '@media (max-width: 768px)': {
+    right: '50px',
+  },
 });
 
 export const StyledIcon = styled(KeyboardDoubleArrowUpIcon)({
