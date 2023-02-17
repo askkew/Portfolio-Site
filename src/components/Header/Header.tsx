@@ -1,47 +1,9 @@
 import React, { Component } from "react";
-import { useEffect, useState } from "react";
-
-import { HashLink as Link } from "react-router-hash-link";
-import { FaAlignRight } from "react-icons/fa";
-import { styled } from "@mui/system";
-import { Button, Box } from "@mui/material";
-import { StyledButton } from "../utils/Button";
-import { headerColor } from "../utils/content";
+import { useState } from "react";
+import { StyledButton } from "../../utils/Button";
+import { StyledDrawer, HeaderBox, Container, NavContainer, MobileNavArea, DesktopNavArea, NavArea, StyledIconButton, StyledMenuIcon } from "./HeaderStyles";
 
 //#0a192f
-
-const HeaderBox = styled('header')({
-  backdropFilter: 'blur(4px)',
-  background: 'transparent',
-  color: "#e6f1ff",
-  padding: "33px",
-  position: "fixed",
-  width: "100%",
-  height: "10%",
-  boxShadow: '0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%)',
-  transition: 'top 0.3s',
-})
-
-const Container = styled('div')({
-  maxWidth: "1200px",
-  margin: "0 auto",
-})
-
-const NavContainer = styled('div')({
-  display: "flex",
-  alignContent: "center",
-  justifyContent: "center",
-})
-
-const LogoButton = styled('div')({
-  fontSize: "1.5rem",
-  cursor: "pointer",
-})
-
-const NavArea = styled('nav')({
-  display: "flex",
-  gap: "4rem",
-})
 
 const Header = () => {
   var prevScrollpos = window.pageYOffset;
@@ -57,6 +19,11 @@ const Header = () => {
 
 
   //================================================================================================
+  const [open, setOpen] = useState(false);
+
+  const toggleOpen = () => {
+    setOpen(!open);
+  };
 
   const navLinks = ["about", "experience", "projects", "contact"];
 
@@ -83,11 +50,18 @@ const Header = () => {
       <Container>
         <NavContainer>
           <NavArea>
-            {navLinks.map((nav) => renderNavLink(nav))}
+            <StyledIconButton onClick={toggleOpen}>
+              <StyledMenuIcon />
+            </StyledIconButton>
+            <StyledDrawer anchor="top" open={open} onClose={toggleOpen}>
+              <MobileNavArea>
+                {navLinks.map((nav) => renderNavLink(nav))}
+              </MobileNavArea>
+            </StyledDrawer>
+            <DesktopNavArea>
+              {navLinks.map((nav) => renderNavLink(nav))}
+            </DesktopNavArea>
           </NavArea>
-          {/* <StyledButton className="glowing-btn">
-            <span className="glowing-txt">Resume</span>
-          </StyledButton> */}
         </NavContainer>
       </Container>
     </HeaderBox>
