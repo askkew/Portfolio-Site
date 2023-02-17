@@ -16,8 +16,8 @@ function App() {
     $(document).ready(function() {
       $(window).scroll(function(e) {
         // @ts-ignore
-        if ($(window).scrollTop() >= 3900) {
-          $(window).scrollTop(3900);
+        if ($(window).scrollTop() >= 3910) {
+          $(window).scrollTop(3910);
         }
       });
     });
