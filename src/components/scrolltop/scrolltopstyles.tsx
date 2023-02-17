@@ -6,8 +6,8 @@ import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp
 
 export const ButtonCircle = styled('div')({
   position: 'fixed',
-  bottom: '75px',
-  right: '75px',
+  bottom: '100px',
+  right: '275px',
   width: '50px',
   height: '50px',
 });
