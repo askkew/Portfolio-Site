@@ -1,8 +1,5 @@
 import react from "react";
-import { styled } from "@mui/system";
-import { ButtonCircle, StyledIcon } from "./scrolltopstyles";
-import IconButton from '@mui/material/IconButton';
-import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import { ButtonCircle, StyledIcon, StyledScrollButton } from "./scrolltopstyles";
 
 const ScrollButton = () => {
 
@@ -12,9 +9,9 @@ const ScrollButton = () => {
 
   return (
     <ButtonCircle>
-      <IconButton aria-label="scroll to top" onClick={handleClickNav}>
-        <StyledIcon />
-      </IconButton>
+      <StyledScrollButton disableRipple className="" aria-label="scroll to top" onClick={handleClickNav}>
+        <StyledIcon className="glowing-txt" />
+      </StyledScrollButton>
     </ButtonCircle>
   );
 };

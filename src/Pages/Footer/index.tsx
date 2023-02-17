@@ -28,16 +28,16 @@ const Footer = () => {
       <SocialButtons>
         <IconButton color="primary" component="label">
           <Link href="https://github.com/askkew" target="_blank" >
-            <GitHubIcon style={{transform: 'scale(0.9)', margin: "0 5 0 5"}}/>
+            <GitHubIcon style={{transform: 'scale(0.9)', margin: "0 5 0 5", color: 'hsl(213, 89%, 79%)'}}/>
           </Link>
         </IconButton>
         <IconButton color="primary" component="label">
           <Link href="https://www.linkedin.com/in/luke-overbey-37b342235/" target="_blank" >
-            <LinkedInIcon style={{transform: 'scale(0.9)', margin: "0 5 0 5"}}/>
+            <LinkedInIcon style={{transform: 'scale(0.9)', margin: "0 5 0 5", color: 'hsl(213, 89%, 79%)'}}/>
           </Link>
         </IconButton>
         <IconButton color="primary" component="label" onClick={() => window.open('mailto:lucasaoverbey@gmail.com')}>
-          <EmailIcon style={{transform: 'scale(0.9)', margin: "0 5 0 5"}}/>
+          <EmailIcon style={{transform: 'scale(0.9)', margin: "0 5 0 5", color: 'hsl(213, 89%, 79%)'}}/>
         </IconButton>
       </SocialButtons>
     </StyledFooter>
