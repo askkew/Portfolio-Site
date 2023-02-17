@@ -2,6 +2,13 @@ import styled from "@emotion/styled";
 import { RowDiv } from "../../utils/content";
 import { IconButton, Button, Link, Typography } from "@mui/material";
 
+export const ExperienveDiv = styled("div")({
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+});
+
 export const LeftRowDiv = styled(RowDiv)({
   display: "flex",
   flexDirection: "row",
