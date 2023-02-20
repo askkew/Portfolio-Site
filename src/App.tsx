@@ -16,16 +16,8 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import Stars from './components/Stars';
 
 function App() {
-  const [offsetY, setOffsetY] = React.useState(0);
-  const handleScroll = () => setOffsetY(window.pageYOffset);
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const renderContent = () => (
+  return (
     <div>
       <Header/>
       <Home/>
@@ -35,26 +27,6 @@ function App() {
       <Contact/>
       <ScrollButton/>
       <Footer/>
-    </div>
-  );
-
-  return (
-    <div>
-      <section>
-        <div 
-          id="stars" 
-          style={{transform: `translateY(${offsetY * 0.2}px`}}
-        />
-        <div
-          id="stars2"
-          style={{transform: `translateY(${offsetY * 0.5}px`}}
-        />
-        <div
-          id="stars3"
-          style={{transform: `translateY(${offsetY * 0.7}px`}}
-        />
-        <div>{renderContent()}</div>
-      </section>
     </div>
   );
 }
