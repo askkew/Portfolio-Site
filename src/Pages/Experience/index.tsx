@@ -2,6 +2,7 @@ import React from "react";
 import { styled } from "@mui/system";
 import { LeftRowDiv, RightRowDiv, ExperienceDiv, TemporarySquare, TemporarySquareRight, ExperienceTitleTypograph, ExperienceTypograph } from "./ExperienceStyles";
 import { ColumnDiv, RowDiv } from "../../utils/content";
+import { Parallax } from "react-scroll-parallax";
 
 const Experience = () => {
   return (

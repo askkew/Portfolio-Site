@@ -1,12 +1,12 @@
-import React from "react";
+import { Parallax } from 'react-scroll-parallax';
 
 const Stars = () => {
   return (
-    <>
-      <div className="stars"/>
-      <div className="stars2"/>
-      <div className="stars3"/>
-    </>
+    <Parallax translateY={[-20, 20]}>
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </Parallax>
   );
 };
 
