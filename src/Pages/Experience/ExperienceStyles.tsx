@@ -1,90 +1,57 @@
 import styled from "@emotion/styled";
 import { RowDiv } from "../../utils/content";
-import { IconButton, Button, Link, Typography } from "@mui/material";
+import { IconButton, Button, Link, Typography, Card, CardContent } from "@mui/material";
 
 export const ExperienceDiv = styled("div")({
   display: "flex",
-  flexDirection: "column",
+  flexDirection: "row",
   justifyContent: "center",
   alignItems: "center",
+  '@media (max-width: 868px)': {
+    flexDirection: "column",
+  },
 });
 
-export const LeftRowDiv = styled(RowDiv)({
-  display: "flex",
-  flexDirection: "row",
-  justifyContent: "left",
-  alignItems: "left",
-  backdropFilter: "blur(10px)",
-  width: "50%",
-  height: "330px",
-  border: "1px solid white",
-  margin: "0",
-  padding: "0",
-  '@media (max-width: 868px)': {
-    width: "80%",
+export const SecondExperienceDiv = styled("div")({
+  display: 'flex',
+  flexDirection: 'row',
+  padding: '0px,100px,0px,100px',
+  '@media (max-width: 1068px)': {
+    flexDirection: "column",
   },
-})
+});
 
-export const RightRowDiv = styled(RowDiv)({
+export const ExperienceCard = styled(Card)({
   display: "flex",
-  flexDirection: "row",
-  justifyContent: "right",
-  alignItems: "right",
-  backdropFilter: "blur(10px)",
-  width: "50%",
-  height: "330px",
-  border: "1px solid white",
-  margin: "0",
-  padding: "0",
-  '@media (max-width: 868px)': {
-    width: "80%",
-    justifyContent: "left",
-    alignItems: "left",
-  },
-})
+  flexDirection: "column",
+  justifyContent: "top",
+  boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+  backgroundColor: 'rgb(26,28,38)',
+  width: "500px",
+  height: "500px",
+  margin: 10,
+  padding: 15,
+});
+
+export const ExperienceCardContent = styled(CardContent)({
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "top",
+  alignItems: "center",
+});
 
 export const ExperienceTitleTypograph = styled(Typography)({
   fontSize: "2.2rem",
   fontWeight: "bold",
-  textShadow: "0px 0px 10px #000000",
+  textShadow: 'rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset',
   color: "#e6f1ff",
-  margin: "0",
-  padding: 10,
   '@media (max-width: 768px)': {
     fontSize: "4rem",
   },
 });
 
-export const TemporarySquare = styled("div")({
-  position: "absolute",
-  left: "-20px",
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
-  width: "360px",
-  height: "300px",
-  border: "2px solid gainsboro",
-  margin: "0",
-  padding: "0",
-});
-
-export const TemporarySquareRight = styled("div")({
-  position: "absolute",
-  right: "-20px",
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
-  width: "360px",
-  height: "300px",
-  border: "2px solid gainsboro",
-  margin: "0",
-  padding: "0",
-});
-
 export const ExperienceTypograph = styled(Typography)({
-  fontSize: "1.4rem",
+  fontSize: "0.9rem",
   fontWeight: "bold",
   textShadow: "0px 0px 10px #000000",
   color: "#e6f1ff",

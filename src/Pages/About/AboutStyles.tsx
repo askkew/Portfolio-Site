@@ -1,12 +1,48 @@
 import React from "react";
 import { styled } from "@mui/system";
-import { Box, Typography } from "@mui/material";
+import { Box, Card, Typography } from "@mui/material";
 
 export const AboutDiv = styled('div')({
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
+});
+
+export const AboutCard = styled(Card)({
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "top",
+  alignItems: "center",
+  boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+  backgroundColor: 'rgb(26,28,38)',
+  width: "350px",
+  height: "380px",
+  margin: 10,
+  padding: 15,
+  '&:hover': {
+    // height: "580px",
+    transform: 'scale(1.05)',
+    transition: 'height 1.2s ease-in-out',
+  },
+});
+
+export const LanguagesCard = styled(AboutCard)({
+  height: "580px",
+});
+
+export const SoftwareDevelopmentCard = styled(AboutCard)({
+  height: "480px",
+});
+
+export const ToolsetIcons = styled('div')({
+  display: "grid",
+  gridTemplateColumns: "repeat(3, 1fr)",
+  gridGap: "10px",
+  padding: "10px",
+  '@media (max-width: 768px)': {
+    gridTemplateColumns: "repeat(2, 1fr)",
+  },
 });
 
 export const SkillsDiv = styled('div')({
@@ -36,7 +72,7 @@ export const SkillsRowDiv = styled("div")({
 });
 
 export const AboutTitleTypograph = styled(Typography)({
-  fontSize: "5.2rem",
+  fontSize: "2.2rem",
   fontWeight: "bold",
   textShadow: "0px 0px 10px #000000",
   color: "#e6f1ff",
