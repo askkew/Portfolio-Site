@@ -20,7 +20,7 @@ import { DiCss3 } from 'react-icons/di'
 import { SiTypescript } from 'react-icons/si'
 import { SiJavascript } from 'react-icons/si'
 import { SiRedux } from 'react-icons/si'
-import { StyledIcon, StyledScrollButton, ToolIcons } from './icons'
+import { StyledScrollButton, ToolIcons } from './icons'
 
 const About = () => {
   const [isDesktop, setIsDesktop] = React.useState(false);
@@ -47,9 +47,6 @@ const About = () => {
               {
                 ToolIcons.map((icon, index) => {
                   return (
-                    // <div key={index}>
-                    //   {icon}
-                    // </div>
                     <StyledScrollButton disableRipple key={index}>
                       {icon}
                     </StyledScrollButton>
@@ -62,9 +59,6 @@ const About = () => {
           <AboutCard>
             <AboutTitleTypograph>Software Development</AboutTitleTypograph>
             <SkillsTypograph2>Data Structures, OOD, OOP, Algorithms, Critical Thinking, Problem Solving, GIT, RESTful APIs, Heroku, Netlify, AWS</SkillsTypograph2>
-            <StyledScrollButton disableRipple className="" aria-label="scroll to top">
-              <StyledIcon className="glowing-txt" />
-            </StyledScrollButton>
           </AboutCard>
           <AboutCard>
             <AboutTitleTypograph>Computer experience</AboutTitleTypograph>

@@ -31,6 +31,7 @@ export const ExperienceCard = styled(Card)({
   height: "500px",
   margin: 10,
   padding: 15,
+  zIndex: 88,
 });
 
 export const ExperienceCardContent = styled(CardContent)({

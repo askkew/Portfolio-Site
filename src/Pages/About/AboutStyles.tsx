@@ -17,9 +17,10 @@ export const AboutCard = styled(Card)({
   boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
   backgroundColor: 'rgb(26,28,38)',
   width: "350px",
-  height: "380px",
+  height: "480px",
   margin: 10,
   padding: 15,
+  zIndex: 90,
   '&:hover': {
     // height: "580px",
     transform: 'scale(1.05)',

@@ -13,49 +13,35 @@ import { SiRedux } from 'react-icons/si'
 import { FaBootstrap } from 'react-icons/fa'
 import { primaryColor } from '../../utils/content'
 import { IconButton } from '@mui/material'
+import { transcode } from 'buffer'
 
 const IconStyle = {
-  fontSize: 30,
-  color: primaryColor,
+  fontSize: 68,
+}
+
+const IconStyleSolid = {
+  fontSize: 50,
 }
 
 export const ToolIcons = [
-  <SiJavascript style={IconStyle} />,
-  <SiTypescript style={IconStyle} />,
-  <FaReact style={IconStyle} />,
-  <FaHtml5 style={IconStyle} />,
-  <FaCss3Alt style={IconStyle} />,
-  <DiNodejs style={IconStyle} />,
-  <DiMongodb style={IconStyle} />,
-  <DiMysql style={IconStyle} />,
-  <DiCss3 style={IconStyle} />,
-  <SiRedux style={IconStyle} />,
-  <FaNodeJs style={IconStyle} />,
-  <FaBootstrap style={IconStyle} />
+  <SiJavascript className="glowing-txt" style={IconStyle} />,
+  <SiTypescript className="glowing-txt" style={IconStyle} />,
+  <FaReact className="glowing-txt" style={IconStyle} />,
+  <FaHtml5 className="glowing-txt" style={IconStyle} />,
+  <FaCss3Alt className="glowing-txt" style={IconStyle} />,
+  <DiNodejs className="glowing-txt" style={IconStyle} />,
+  <DiMongodb className="glowing-txt" style={IconStyle} />,
+  <DiMysql className="glowing-txt" style={IconStyle} />,
+  <DiCss3 className="glowing-txt" style={IconStyle} />,
+  <SiRedux className="glowing-txt" style={IconStyle} />,
+  <FaNodeJs className="glowing-txt" style={IconStyle} />,
+  <FaBootstrap className="glowing-txt" style={IconStyle} />
 ]
-
-// {
-//   ToolIcons.map((icon, index) => {
-//     return (
-//       <IconButton key={index}>
-//         {icon}
-//       </IconButton>
-//     )
-//   })
-// }
-
-
-
-export const StyledIcon = styled(DiMysql)({
-
-});
-
 
 export const StyledScrollButton = styled(IconButton)({
   'position': 'relative',
   'color': 'var(--glow-color)',
   'cursor': 'pointer',
-  'padding': '1em 1.0em',
   'border': '0.15em solid var(--glow-color)',
   'border-radius': '0.45em',
   'background': 'none',
@@ -66,16 +52,6 @@ export const StyledScrollButton = styled(IconButton)({
   'letter-spacing': '1em',
   'box-shadow': 'inset 0px 0px 0.5em 0px var(--glow-color), 0px 0px 0.5em 0px var(--glow-color)',
   'animation': 'border-flicker 2s linear infinite',
-  '& .StyledIcon': {
-    'float': 'left',
-    // 'margin-right': '-0.8em',
-    'text-shadow': '0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--glow-color)',
-    'animation': 'text-flicker 3s linear infinite',
-    '&.faulty-letter': {
-      'opacity': '0.5',
-      'animation': 'faulty-flicker 2s linear infinite'
-    }
-  },
   '&::after': {
     'content': '""',
     'position': 'absolute',

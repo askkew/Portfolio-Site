@@ -7,6 +7,8 @@ import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp
 export const ButtonCircle = styled('div')({
   position: 'fixed',
   bottom: '100px',
+  zIndex: 100,
+  backdropFilter: 'blur(4px)',
   right: '275px',
   width: '50px',
   height: '50px',
