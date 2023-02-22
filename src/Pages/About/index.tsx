@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { styled } from "@mui/system";
-import { AboutDiv, AboutCard, SkillsDiv, SkillsTypograph, SkillsRowDiv, AboutTitleTypograph, SkillsTypograph2, LanguagesCard, SoftwareDevelopmentCard, ToolsetIcons } from "./AboutStyles";
+import { AboutDiv, AboutCard, SkillsDiv, SkillsTypograph, AboutTitleTypograph, SkillsTypograph2, ToolsetIcons, ToolSetCard, SkillsBox, SecondSkillsBox } from "./AboutStyles";
 import { RowDiv, ColumnDiv, primaryColor } from "../../utils/content";
 import StorageIcon from '@mui/icons-material/Storage';
 import ComputerIcon from '@mui/icons-material/Computer';
@@ -20,7 +20,7 @@ import { DiCss3 } from 'react-icons/di'
 import { SiTypescript } from 'react-icons/si'
 import { SiJavascript } from 'react-icons/si'
 import { SiRedux } from 'react-icons/si'
-import { StyledScrollButton, ToolIcons } from './icons'
+import { StyledScrollButton, ToolIconLabel, ToolIcons } from './icons'
 
 const About = () => {
   const [isDesktop, setIsDesktop] = React.useState(false);
@@ -28,7 +28,7 @@ const About = () => {
   // const icons = [<SiJavascript style={{}}/>, 'SiTypescript', 'FaReact', 'FaHtml5', 'FaCss3Alt', 'DiNodejs', 'DiMongodb', 'DiMysql', 'DiCss3', 'SiRedux', 'FaNodeJs']
 
   useEffect(() => {
-    if (window.innerWidth > 769) {
+    if (window.innerWidth > 1390) {
       setIsDesktop(true);
       setIsMobile(false);
     } else {
@@ -40,8 +40,8 @@ const About = () => {
   return (
     <section id="about" style={{  background: 'radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%)'}}>
       <AboutDiv>
-        <SkillsRowDiv>
-          <AboutCard>
+        <SkillsBox>
+          <ToolSetCard>
             <AboutTitleTypograph>Toolset</AboutTitleTypograph>
             <ToolsetIcons>
               {
@@ -49,21 +49,25 @@ const About = () => {
                   return (
                     <StyledScrollButton disableRipple key={index}>
                       {icon}
+                      {
+                        ToolIconLabel[index] && <span>{ToolIconLabel[index]}</span>
+                      }
                     </StyledScrollButton>
                   )
                 })
               }
             </ToolsetIcons>
-            {/* <SkillsTypograph2>HTML, CSS, JavaScript, React, Redux, TypeScript, Material UI, Bootstrap, Node.js, Express.js, MongoDB, MySQL, Mongoose, JWT</SkillsTypograph2> */}
-          </AboutCard>
-          <AboutCard>
-            <AboutTitleTypograph>Software Development</AboutTitleTypograph>
-            <SkillsTypograph2>Data Structures, OOD, OOP, Algorithms, Critical Thinking, Problem Solving, GIT, RESTful APIs, Heroku, Netlify, AWS</SkillsTypograph2>
-          </AboutCard>
-          <AboutCard>
-            <AboutTitleTypograph>Computer experience</AboutTitleTypograph>
-          </AboutCard>
-        </SkillsRowDiv>
+          </ToolSetCard>
+          <SecondSkillsBox>
+            <AboutCard>
+              <AboutTitleTypograph>Software Development</AboutTitleTypograph>
+              <SkillsTypograph2>Data Structures, OOD, OOP, Algorithms, Critical Thinking, Problem Solving, GIT, RESTful APIs, Heroku, Netlify, AWS</SkillsTypograph2>
+            </AboutCard>
+            <AboutCard>
+              <AboutTitleTypograph>Computer experience</AboutTitleTypograph>
+            </AboutCard>
+          </SecondSkillsBox>
+        </SkillsBox>
       </AboutDiv>
     </section>
   );

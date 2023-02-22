@@ -14,28 +14,37 @@ import { FaBootstrap } from 'react-icons/fa'
 import { primaryColor } from '../../utils/content'
 import { IconButton } from '@mui/material'
 import { transcode } from 'buffer'
+import { StyledSpan } from './AboutStyles'
 
 const IconStyle = {
   fontSize: 68,
-}
-
-const IconStyleSolid = {
-  fontSize: 50,
+  marginRight: 10,
 }
 
 export const ToolIcons = [
   <SiJavascript className="glowing-txt" style={IconStyle} />,
   <SiTypescript className="glowing-txt" style={IconStyle} />,
-  <FaReact className="glowing-txt" style={IconStyle} />,
+  <DiMysql className="glowing-txt" style={IconStyle} />,
   <FaHtml5 className="glowing-txt" style={IconStyle} />,
   <FaCss3Alt className="glowing-txt" style={IconStyle} />,
-  <DiNodejs className="glowing-txt" style={IconStyle} />,
   <DiMongodb className="glowing-txt" style={IconStyle} />,
-  <DiMysql className="glowing-txt" style={IconStyle} />,
-  <DiCss3 className="glowing-txt" style={IconStyle} />,
+  <FaReact className="glowing-txt" style={IconStyle} />,
   <SiRedux className="glowing-txt" style={IconStyle} />,
   <FaNodeJs className="glowing-txt" style={IconStyle} />,
-  <FaBootstrap className="glowing-txt" style={IconStyle} />
+  // <FaBootstrap className="glowing-txt" style={IconStyle} />
+]
+
+export const ToolIconLabel = [
+  <StyledSpan className="glowing-txt">JavaScript</StyledSpan>,
+  <StyledSpan className="glowing-txt">TypeScript</StyledSpan>,
+  <StyledSpan className="glowing-txt">MySQL</StyledSpan>,
+  <StyledSpan className="glowing-txt">HTML5</StyledSpan>,
+  <StyledSpan className="glowing-txt">CSS3</StyledSpan>,
+  <StyledSpan className="glowing-txt">MongoDB</StyledSpan>,
+  <StyledSpan className="glowing-txt">React</StyledSpan>,
+  <StyledSpan className="glowing-txt">Redux</StyledSpan>,
+  <StyledSpan className="glowing-txt">NodeJS</StyledSpan>,
+  // <StyledSpan className="glowing-txt">Bootstrap</StyledSpan>
 ]
 
 export const StyledScrollButton = styled(IconButton)({
@@ -49,7 +58,7 @@ export const StyledScrollButton = styled(IconButton)({
   'font-family': '"Raleway", sans-serif',
   'font-size': '1em',
   'font-weight': '400',
-  'letter-spacing': '1em',
+  'letter-spacing': '0.8em',
   'box-shadow': 'inset 0px 0px 0.5em 0px var(--glow-color), 0px 0px 0.5em 0px var(--glow-color)',
   'animation': 'border-flicker 2s linear infinite',
   '&::after': {

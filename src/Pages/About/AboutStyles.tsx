@@ -16,24 +16,33 @@ export const AboutCard = styled(Card)({
   alignItems: "center",
   boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
   backgroundColor: 'rgb(26,28,38)',
-  width: "350px",
-  height: "480px",
+  width: "50%",
+  height: "280px",
   margin: 10,
   padding: 15,
   zIndex: 90,
-  '&:hover': {
-    // height: "580px",
-    transform: 'scale(1.05)',
-    transition: 'height 1.2s ease-in-out',
+  '@media (max-width: 768px)': {
+    width: "90%",
+    height: "200px",
   },
 });
 
-export const LanguagesCard = styled(AboutCard)({
-  height: "580px",
+export const SecondSkillsBox = styled('div')({
+  display: "flex",
+  flexDirection: "row",
+  justifyContent: "center",
+  alignItems: "center",
+  '@media (max-width: 768px)': {
+    flexDirection: "column",
+  },
 });
 
-export const SoftwareDevelopmentCard = styled(AboutCard)({
-  height: "480px",
+export const ToolSetCard = styled(AboutCard)({
+  width: '73%',
+  height: '400px',
+  '@media (max-width: 768px)': {
+    height: '40%',
+  },
 });
 
 export const ToolsetIcons = styled('div')({
@@ -41,10 +50,15 @@ export const ToolsetIcons = styled('div')({
   gridTemplateColumns: "repeat(3, 1fr)",
   gridGap: "10px",
   padding: "10px",
-  '@media (max-width: 768px)': {
-    gridTemplateColumns: "repeat(2, 1fr)",
-  },
 });
+
+export const SkillsBox = styled('div')({
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  width: "90%",
+})
 
 export const SkillsDiv = styled('div')({
   display: "flex",
@@ -55,21 +69,6 @@ export const SkillsDiv = styled('div')({
   border: "2px solid gainsboro",
   width: "330px",
   height: "330px",
-  '@media (max-width: 768px)': {
-    width: "80%",
-    height: "10%",
-    padding: '7rem 10rem 7rem 10rem',
-  },
-});
-
-export const SkillsRowDiv = styled("div")({
-  display: "flex",
-  flexDirection: "row",
-  justifyContent: "center",
-  alignItems: "center",
-  '@media (max-width: 768px)': {
-    flexDirection: "column",
-  },
 });
 
 export const AboutTitleTypograph = styled(Typography)({
@@ -80,7 +79,7 @@ export const AboutTitleTypograph = styled(Typography)({
   margin: "0",
   padding: "0",
   '@media (max-width: 768px)': {
-    fontSize: "4rem",
+    fontSize: "1.5rem",
   },
 });
 
@@ -92,7 +91,7 @@ export const SkillsTypograph = styled(Typography)({
   margin: "0",
   padding: "0",
   '@media (max-width: 768px)': {
-    fontSize: "1rem",
+    fontSize: "0.8rem",
   },
 });
 
@@ -105,5 +104,12 @@ export const SkillsTypograph2 = styled(Typography)({
   margin: "0",
   paddingTop: "20px",
   '@media (max-width: 768px)': {
+    fontSize: "0.8rem",
   },
 });
+
+export const StyledSpan = styled('span')({
+  '@media (max-width: 1390px)': {
+    display: "none",
+  },
+})
