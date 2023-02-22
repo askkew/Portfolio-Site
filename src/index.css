@@ -22,7 +22,62 @@
   background: transparent;
 }
 
+#expcard {
+  /* background: #282a32; */
+  /* background: rgb(181, 176, 155); */
+  background: hsl(213, 24%, 46%);
+  height: 395px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
+#expcard2 {
+  background: hsl(213, 24%, 46%);
+  height: 380px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#expcardback {
+  -webkit-transform: skewY(-5deg);
+  -moz-transform: skewY(-5deg);
+  -ms-transform: skewY(-5deg);
+  -o-transform: skewY(-5deg);
+  transform: skewY(-5deg);
+  background: hsl(213, 24%, 33%);
+  height: 415px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#expcard2back {
+  -webkit-transform: skewY(5deg);
+  -moz-transform: skewY(5deg);
+  -ms-transform: skewY(5deg);
+  -o-transform: skewY(5deg);
+  transform: skewY(5deg);
+  background: hsl(213, 24%, 33%);
+  height: 400px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#projectcard {
+  -webkit-transform: skewY(5deg);
+  -moz-transform: skewY(5deg);
+  -ms-transform: skewY(5deg);
+  -o-transform: skewY(5deg);
+  transform: skewY(5deg);
+  background: #1a1c26;
+  height: 75%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#site {
+  -webkit-transform: skewY(5deg);
+  -moz-transform: skewY(5deg);
+  -ms-transform: skewY(5deg);
+  -o-transform: skewY(5deg);
+  transform: skewY(5deg);
+  background: #1a1c26;
+  padding: 4rem;
+}
 
 ul {
   list-style: none;

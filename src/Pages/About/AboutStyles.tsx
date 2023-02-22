@@ -2,6 +2,7 @@ import React from "react";
 import { styled } from "@mui/system";
 import { Box, Card, Typography } from "@mui/material";
 
+
 export const AboutDiv = styled('div')({
   display: "flex",
   flexDirection: "column",

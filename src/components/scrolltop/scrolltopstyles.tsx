@@ -12,6 +12,10 @@ export const ButtonCircle = styled('div')({
   right: '275px',
   width: '50px',
   height: '50px',
+  // transition: 'left 0.5s ease-out',
+  // '&.show': {
+  //   left: '20px',
+  // },
   '@media (max-width: 1600px)': {
     right: '200px',
   },

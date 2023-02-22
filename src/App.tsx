@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
@@ -8,19 +7,15 @@ import Header from './components/Header/Header';
 import Home from './Pages/Home';
 import Projects from './Pages/Projects';
 import Footer from './Pages/Footer';
-import layer6 from './assets/layer-06.png';
 import ScrollButton from './components/scrolltop';
 import $ from 'jquery';
-import {ParallaxProvider} from 'react-scroll-parallax';
-import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-import Stars from './components/Stars';
 
 function App() {
 
   return (
     <div>
       <Header/>
-      <Home/>
+      <Home />
       <About/>
       <Experience/>
       <Projects/>

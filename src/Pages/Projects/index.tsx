@@ -8,7 +8,9 @@ const Projects = () => {
   return (
     <section id="projects" style={{  background: 'radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%)'}}>
       <ProjectDiv>
-        <ProjectTitleTypograph>Projects</ProjectTitleTypograph>
+        <div id="projectcard">
+          <ProjectTitleTypograph>Projects</ProjectTitleTypograph>
+        </div>
       </ProjectDiv>
     </section> 
   );

@@ -16,7 +16,7 @@ const Home = () => {
   const renderHomeContent = () => (
     <section id="home" style={{  background: 'radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%)'}}>
       <TitleDiv>
-        <NameTypograph variant="h1">LUCAS OVERBEY</NameTypograph>
+        <NameTypograph variant="h1">LUCAS ASKEW OVERBEY</NameTypograph>
         <SubtitleTypograph variant="h2">Software Developer, Full Stack</SubtitleTypograph>
       </TitleDiv>
     </section>
