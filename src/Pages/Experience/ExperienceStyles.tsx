@@ -73,3 +73,35 @@ export const ExperienceTypograph = styled(Typography)({
     fontSize: "1rem",
   },
 });
+
+export const MedPLUS = styled("div")({
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  position: "relative",
+  left: "400px",
+  '@media (max-width: 1268px)': {
+    left: "auto",
+  },
+});
+
+export const TDSC = styled("div")({
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  position: "relative",
+  right: "400px",
+  '@media (max-width: 1268px)': {
+    right: "auto",
+  },
+});
+
+export const Description = styled(ExperienceTypograph)({
+  fontSize: "1.2rem",
+  width: "50%",
+  textAlign: "center",
+  position: "relative",
+  right: "300px",
+});

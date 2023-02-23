@@ -58,15 +58,39 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+#TDSCpicture {
+  -webkit-transform: skewY(-5deg);
+  -moz-transform: skewY(-5deg);
+  -ms-transform: skewY(-5deg);
+  -o-transform: skewY(-5deg);
+  transform: skewY(-5deg);
+}
+
+#medpicture {
+  -webkit-transform: skewY(5deg);
+  -moz-transform: skewY(5deg);
+  -ms-transform: skewY(5deg);
+  -o-transform: skewY(5deg);
+  transform: skewY(5deg);
+}
+
 #projectcard {
   -webkit-transform: skewY(5deg);
   -moz-transform: skewY(5deg);
   -ms-transform: skewY(5deg);
   -o-transform: skewY(5deg);
   transform: skewY(5deg);
-  background: #1a1c26;
-  height: 75%;
+  background: hsl(213, 24%, 46%);
+  height: 100%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#projecttext {
+  -webkit-transform: skewY(-5deg);
+  -moz-transform: skewY(-5deg);
+  -ms-transform: skewY(-5deg);
+  -o-transform: skewY(-5deg);
+  transform: skewY(-5deg);
 }
 
 #site {
