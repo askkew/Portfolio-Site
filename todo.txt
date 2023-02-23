@@ -1,0 +1,10 @@
+add some sort of cool styling to the home page, name and occupation
+add mobile styling to the project Pages
+add modern UI to contact page
+add animations to each page
+add descriptions to both websites for experience
+host both sites with a link to github and link to site
+fix some mobile styling to entire project
+get rid of white bar at the top
+fix the stars
+do more styling to about page

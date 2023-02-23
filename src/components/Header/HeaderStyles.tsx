@@ -25,6 +25,10 @@ export const NavContainer = styled('div')({
   display: "flex",
   alignContent: "center",
   justifyContent: "center",
+  '@media (max-width: 1022px)': {
+    alignContent: "right",
+    justifyContent: "right",
+  },
 })
 
 export const LogoButton = styled('div')({

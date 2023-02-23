@@ -80,9 +80,7 @@
   -ms-transform: skewY(5deg);
   -o-transform: skewY(5deg);
   transform: skewY(5deg);
-  background: hsl(213, 24%, 46%);
   height: 100%;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 #projecttext {

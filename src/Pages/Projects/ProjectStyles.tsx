@@ -4,9 +4,13 @@ import { IconButton, Button, Link, Typography } from '@mui/material';
 
 export const ProjectDiv = styled('div')({
   display: 'flex',
-  flexDirection: 'column',
+  flexDirection: 'row',
   justifyContent: 'center',
   alignItems: 'center',
+  '@media (max-width: 768px)': {
+    flexDirection: 'column',
+    justifyContent: 'center',
+  },
 });
 
 export const ProjectTitleTypograph = styled(Typography)({
