@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { RowDiv } from "../../utils/content";
-import { IconButton, Button, Link, Typography, Card } from "@mui/material";
+import { primary, secondary, tertiary } from "../../utils/content";
+import { IconButton, Button, Link, Typography, Card, InputBase } from "@mui/material";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
@@ -18,7 +19,7 @@ export const ContactCard = styled(Card)({
   flexDirection: "row",
   justifyContent: "top",
   borderRadius: "2rem",
-  backgroundColor: 'rgb(255, 255, 255)',
+  backgroundColor: secondary ,
   width: "1000px",
   height: "500px",
   margin: 10,
@@ -36,10 +37,10 @@ export const ContactCardMessage = styled('div')({
   flexDirection: "column",
   justifyContent: "top",
   alignItems: "center",
-  borderRadius: "2rem 2rem 0rem 2rem",
+  borderRadius: "2rem 2rem 2rem 2rem",
   width: "50%",
   height: "100%",
-  backgroundColor: "hsl(213, 89%, 79%)",
+  backgroundColor: primary,
   '@media (max-width: 768px)': {
     width: "100%",
     height: "50%",
@@ -50,7 +51,7 @@ export const ContactCardMessageTitle = styled(Typography)({
   fontSize: "2.2rem",
   marginBottom: "10px",
   fontWeight: "bold",
-  color: "white",
+  color: "black",
   '@media (max-width: 768px)': {
     fontSize: "1.8rem",
   },
@@ -60,23 +61,9 @@ export const ContactCardMessageText = styled(Typography)({
   fontSize: "1.2rem",
   marginBottom: "10px",
   fontWeight: "bold",
-  color: "white",
+  color: "black",
   '@media (max-width: 768px)': {
     fontSize: "1rem",
-  },
-});
-
-export const OverlaySpan = styled('span')({
-  alignItems: "left",
-  backgroundColor: 'rgb(154, 197, 249)',
-  ':after': {
-    content: '""',
-    position: "absolute",
-    bottom: 10,
-    left: 508,
-    width: 100,
-    height: 100,
-    backgroundColor: 'red',
   },
 });
 
@@ -85,8 +72,6 @@ export const ContactCardInfo = styled('div')({
   flexDirection: "column",
   justifyContent: "top",
   alignItems: "center",
-  backgroundColor: 'rgb(255, 255, 255)',
-  borderRadius: "2rem 2rem 0rem 2rem",
   width: "50%",
   height: "100%",
   '@media (max-width: 768px)': {
@@ -127,4 +112,14 @@ export const StyledEmailIcon = styled(EmailIcon)({
   '&:hover': {
     opacity: .7,
   },
+});
+
+export const CustomTextField = styled(InputBase)({
+  width: '90%',
+  height: '50px',
+  margin: '10px',
+  padding: '10px',
+  color: 'rgb(44,47,52)',
+  borderRadius: '10px',
+  backgroundColor: 'white',
 });

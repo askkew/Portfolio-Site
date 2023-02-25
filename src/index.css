@@ -97,7 +97,7 @@
   -ms-transform: skewY(5deg);
   -o-transform: skewY(5deg);
   transform: skewY(5deg);
-  background: #1a1c26;
+  background: #252732;
   padding: 4rem;
 }
 
@@ -130,6 +130,7 @@ ul {
   list-style: none;
 }
 
+
 body {
   overflow: overlay;
   margin: 0;
@@ -144,35 +145,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-#overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  border-radius: 25px 25px 0 25px;
-}
-
-#overlay:after {
-  align-items: left;
-  background-color: 'rgb(154, 197, 249)';
-  content: '';
-  position: absolute;
-  bottom: 10;
-  left: 508;
-  width: 100;
-  height: 100;
-  background-color: red;
-}
-
-#overlay:after {
-  border-radius: 0 25px 0 0;
-  background-color: blue;
-}
-
 
 #stars {
   width: 1px;
