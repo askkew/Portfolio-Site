@@ -18,7 +18,7 @@ export const AboutCard = styled(Card)({
   boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
   backgroundColor: 'rgb(26,28,38)',
   width: "50%",
-  height: "280px",
+  height: "220px",
   margin: 10,
   padding: 15,
   zIndex: 90,
@@ -27,6 +27,24 @@ export const AboutCard = styled(Card)({
     height: "200px",
   },
 });
+
+export const MapCard = styled('div')({
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "top",
+  alignItems: "center",
+  boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+  backgroundColor: 'rgb(26,28,38)',
+  width: "50%",
+  height: "460px",
+  margin: 10,
+  padding: 15,
+  zIndex: 90,
+  '@media (max-width: 768px)': {
+    width: "90%",
+    height: "200px",
+  },
+})
 
 export const SecondSkillsBox = styled('div')({
   display: "flex",
@@ -39,8 +57,8 @@ export const SecondSkillsBox = styled('div')({
 });
 
 export const ToolSetCard = styled(AboutCard)({
-  width: '73%',
-  height: '400px',
+  width: '1260px',
+  height: '300px',
   '@media (max-width: 768px)': {
     height: '40%',
   },
@@ -48,7 +66,7 @@ export const ToolSetCard = styled(AboutCard)({
 
 export const ToolsetIcons = styled('div')({
   display: "grid",
-  gridTemplateColumns: "repeat(3, 1fr)",
+  gridTemplateColumns: "repeat(4, 1fr)",
   gridGap: "10px",
   padding: "10px",
 });

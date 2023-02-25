@@ -3,13 +3,13 @@ import { FaReact } from 'react-icons/fa'
 import { FaNodeJs } from 'react-icons/fa'
 import { FaHtml5 } from 'react-icons/fa'
 import { FaCss3Alt } from 'react-icons/fa'
-import { DiNodejs } from 'react-icons/di'
 import { DiMongodb } from 'react-icons/di'
 import { DiMysql } from 'react-icons/di'
-import { DiCss3 } from 'react-icons/di'
+import { FaJava } from 'react-icons/fa'
 import { SiTypescript } from 'react-icons/si'
 import { SiJavascript } from 'react-icons/si'
 import { SiRedux } from 'react-icons/si'
+import { DiPhp } from 'react-icons/di'
 import { FaBootstrap } from 'react-icons/fa'
 import { primaryColor } from '../../utils/content'
 import { IconButton } from '@mui/material'
@@ -17,7 +17,7 @@ import { transcode } from 'buffer'
 import { StyledSpan } from './AboutStyles'
 
 const IconStyle = {
-  fontSize: 68,
+  fontSize: 38,
   marginRight: 10,
 }
 
@@ -31,7 +31,9 @@ export const ToolIcons = [
   <FaReact className="glowing-txt" style={IconStyle} />,
   <SiRedux className="glowing-txt" style={IconStyle} />,
   <FaNodeJs className="glowing-txt" style={IconStyle} />,
-  // <FaBootstrap className="glowing-txt" style={IconStyle} />
+  <DiPhp className="glowing-txt" style={IconStyle} />,
+  <FaBootstrap className="glowing-txt" style={IconStyle} />,
+  <FaJava className="glowing-txt" style={IconStyle} />,
 ]
 
 export const ToolIconLabel = [
@@ -44,7 +46,9 @@ export const ToolIconLabel = [
   <StyledSpan className="glowing-txt">React</StyledSpan>,
   <StyledSpan className="glowing-txt">Redux</StyledSpan>,
   <StyledSpan className="glowing-txt">NodeJS</StyledSpan>,
-  // <StyledSpan className="glowing-txt">Bootstrap</StyledSpan>
+  <StyledSpan className="glowing-txt">PHP</StyledSpan>,
+  <StyledSpan className="glowing-txt">Bootstrap</StyledSpan>,
+  <StyledSpan className="glowing-txt">Java</StyledSpan>,
 ]
 
 export const StyledScrollButton = styled(IconButton)({

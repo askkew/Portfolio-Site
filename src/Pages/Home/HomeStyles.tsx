@@ -20,8 +20,10 @@ export const TitleDiv = styled('div')({
 });
 
 export const NameTypograph = styled(Typography)({
-  fontSize: "7.2rem",
-  fontWeight: "bold",
+  fontFamily: '"Raleway", sans-serif',
+  fontSize: '2em',
+  fontWeight: '400',
+  letterSpacing: '1em',
   textShadow: "0px 0px 10px #000000",
   color: "#e6f1ff",
   margin: "0",
@@ -32,8 +34,10 @@ export const NameTypograph = styled(Typography)({
 });
 
 export const SubtitleTypograph = styled(Typography)({
-  fontSize: "2.4rem",
-  fontWeight: "bold",
+  fontFamily: '"Raleway", sans-serif',
+  fontSize: '1em',
+  fontWeight: '400',
+  letterSpacing: '1em',
   textShadow: "0px 0px 10px #000000",
   color: "#e6f1ff",
   margin: "0",

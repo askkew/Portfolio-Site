@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
-import { AboutDiv, AboutCard, SkillsDiv, SkillsTypograph, AboutTitleTypograph, SkillsTypograph2, ToolsetIcons, ToolSetCard, SkillsBox, SecondSkillsBox } from "./AboutStyles";
+import { AboutDiv, AboutCard, SkillsDiv, SkillsTypograph, AboutTitleTypograph, SkillsTypograph2, ToolsetIcons, ToolSetCard, SkillsBox, SecondSkillsBox, MapCard } from "./AboutStyles";
 import { StyledScrollButton, ToolIconLabel, ToolIcons } from './icons'
 import { RiBracesFill } from 'react-icons/ri'
+import { ColumnDiv } from "../../utils/content";
 
 const About = () => {
   const [isDesktop, setIsDesktop] = React.useState(false);
@@ -39,14 +40,19 @@ const About = () => {
             </ToolsetIcons>
           </ToolSetCard>
           <SecondSkillsBox>
-            <AboutCard>
-              <AboutTitleTypograph>Software Development</AboutTitleTypograph>
+            <ColumnDiv>
+              <AboutCard>
+                {/* <AboutTitleTypograph>Computer experience</AboutTitleTypograph> */}
+              </AboutCard>
+              <AboutCard>
+                {/* <AboutTitleTypograph>Computer experience</AboutTitleTypograph> */}
+              </AboutCard>
+            </ColumnDiv>
+            <MapCard>
+              {/* <AboutTitleTypograph>Software Development</AboutTitleTypograph>
               <RiBracesFill style={{ fontSize: 60, color: '#fff', marginRight: 10 }} />
-              <SkillsTypograph2>Data Structures, OOD, OOP, Algorithms, Critical Thinking, Problem Solving, GIT, RESTful APIs, Heroku, Netlify, AWS</SkillsTypograph2>
-            </AboutCard>
-            <AboutCard>
-              <AboutTitleTypograph>Computer experience</AboutTitleTypograph>
-            </AboutCard>
+              <SkillsTypograph2>Data Structures, OOD, OOP, Algorithms, Critical Thinking, Problem Solving, GIT, RESTful APIs, Heroku, Netlify, AWS</SkillsTypograph2> */}
+            </MapCard>
           </SecondSkillsBox>
         </SkillsBox>
       </AboutDiv>
