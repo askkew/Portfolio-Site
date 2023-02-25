@@ -8,3 +8,5 @@ fix some mobile styling to entire project
 get rid of white bar at the top
 fix the stars
 do more styling to about page
+resume button
+resume page with pdf viewer

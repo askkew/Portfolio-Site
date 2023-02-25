@@ -1,31 +1,36 @@
 import { RowDiv } from "../../utils/content";
 import { ExperienceDiv, ExperienceTitleTypograph, ExperienceTypograph, ExperienceCard, SecondExperienceDiv, ExperienceCardContent, MedPLUS, TDSC, Description } from "./ExperienceStyles";
+import { Parallax, useParallax } from "react-scroll-parallax";
 
 const Experience = () => {
   return (
     <section id="experience" style={{ background: 'radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%)'}}>
-      <div id='expcardback'>
-        <ExperienceDiv id='expcard'>
-          <RowDiv>
-            <ExperienceTitleTypograph variant="h1">MedPLUS</ExperienceTitleTypograph>
-            <ExperienceTypograph variant="body1">freelance work</ExperienceTypograph>
-          </RowDiv>
-          <MedPLUS>
-            <img src="/medplusprimary.png" alt="tempimage" height="300px" id="medpicture"/>
-          </MedPLUS>
-        </ExperienceDiv>
-      </div>
-      <div id="expcard2back">
-        <ExperienceDiv id='expcard2'>
-          <RowDiv>
-            <ExperienceTitleTypograph variant="h1">TDSC</ExperienceTitleTypograph>
-            <ExperienceTypograph variant="body1">freelance work</ExperienceTypograph>
-          </RowDiv>
-          <TDSC>
-            <img src="/TDSCprimary.png" alt="tempimage" height="300px" id="TDSCpicture"/>
-          </TDSC>
-        </ExperienceDiv>
-      </div>
+      <Parallax translateX={[180, -100]}>
+        <div id='expcardback'>
+          <ExperienceDiv id='expcard'>
+            <RowDiv>
+              <ExperienceTitleTypograph variant="h1">MedPLUS</ExperienceTitleTypograph>
+              <ExperienceTypograph variant="body1">freelance work</ExperienceTypograph>
+            </RowDiv>
+            <MedPLUS>
+              <img src="/medplusprimary.png" alt="tempimage" height="300px" id="medpicture"/>
+            </MedPLUS>
+          </ExperienceDiv>
+        </div>
+      </Parallax>
+      <Parallax translateX={[-100, 180]}>
+        <div id="expcard2back">
+          <ExperienceDiv id='expcard2'>
+            <RowDiv>
+              <ExperienceTitleTypograph variant="h1">TDSC</ExperienceTitleTypograph>
+              <ExperienceTypograph variant="body1">freelance work</ExperienceTypograph>
+            </RowDiv>
+            <TDSC>
+              <img src="/TDSCprimary.png" alt="tempimage" height="300px" id="TDSCpicture"/>
+            </TDSC>
+          </ExperienceDiv>
+        </div>
+      </Parallax>
     </section> 
   );
 };

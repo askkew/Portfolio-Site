@@ -24,7 +24,7 @@ const Home = () => {
 
   return (
     <div>
-      <div 
+      {/* <div 
         id="stars" 
         style={{transform: `translateY(${offsetY * 0.2}px`}}
       />
@@ -35,7 +35,7 @@ const Home = () => {
       <div 
         id="stars3" 
         style={{transform: `translateY(${offsetY * 0.7}px`}}
-      />
+      /> */}
       <div>{renderHomeContent()}</div>
     </div>
   );

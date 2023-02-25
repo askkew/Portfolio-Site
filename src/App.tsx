@@ -9,17 +9,20 @@ import Projects from './Pages/Projects';
 import Footer from './Pages/Footer';
 import ScrollButton from './components/scrolltop';
 import $ from 'jquery';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 function App() {
 
   return (
     <div>
       <Header/>
-      <Home />
-      <About/>
-      <Experience/>
-      <Projects/>
-      <Contact/>
+      <ParallaxProvider>
+        <Home />
+        <About/>
+        <Experience/>
+        <Projects/>
+        <Contact/>
+      </ParallaxProvider>
       <ScrollButton/>
       <Footer/>
     </div>
