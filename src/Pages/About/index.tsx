@@ -3,6 +3,11 @@ import { AboutDiv, AboutCard, SkillsDiv, SkillsTypograph, AboutTitleTypograph, S
 import { StyledScrollButton, ToolIconLabel, ToolIcons } from './icons'
 import { RiBracesFill } from 'react-icons/ri'
 import { ColumnDiv } from "../../utils/content";
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls } from "@react-three/drei";
+import { DirectionalLight } from "three";
+import { PerspectiveCamera, RenderTexture } from "@react-three/drei/core";
+import { Text } from "@react-three/drei";
 
 const About = () => {
   const [isDesktop, setIsDesktop] = React.useState(false);
@@ -19,10 +24,35 @@ const About = () => {
   }, []);
 
   return (
-    <section id="about" style={{  background: 'radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%)'}}>
+    <section id="about">
       <AboutDiv>
         <SkillsBox>
-          <ToolSetCard>
+
+        </SkillsBox>
+        {/* <Canvas>
+          <OrbitControls enableZoom={false} autoRotate/>
+          <ambientLight intensity={1}/>
+          <directionalLight position={[3,2,1]}/>
+          <mesh>
+            <sphereGeometry args={[1, 12]} />
+            <meshStandardMaterial color="green">
+              <RenderTexture attach="map">
+                <PerspectiveCamera makeDefault position={[0, 0, 5]} />
+                <color attach="background" args={['darkblue']} />
+              </RenderTexture>
+            </meshStandardMaterial>
+          </mesh>
+        </Canvas> */}
+      </AboutDiv>
+    </section>
+  );
+};
+
+export default About
+
+
+
+          {/* <ToolSetCard>
             <AboutTitleTypograph>Toolset</AboutTitleTypograph>
             <ToolsetIcons>
               {
@@ -38,49 +68,4 @@ const About = () => {
                 })
               }
             </ToolsetIcons>
-          </ToolSetCard>
-          <SecondSkillsBox>
-            <ColumnDiv>
-              <AboutCard>
-                {/* <AboutTitleTypograph>Computer experience</AboutTitleTypograph> */}
-              </AboutCard>
-              <AboutCard>
-                {/* <AboutTitleTypograph>Computer experience</AboutTitleTypograph> */}
-              </AboutCard>
-            </ColumnDiv>
-            <MapCard>
-              {/* <AboutTitleTypograph>Software Development</AboutTitleTypograph>
-              <RiBracesFill style={{ fontSize: 60, color: '#fff', marginRight: 10 }} />
-              <SkillsTypograph2>Data Structures, OOD, OOP, Algorithms, Critical Thinking, Problem Solving, GIT, RESTful APIs, Heroku, Netlify, AWS</SkillsTypograph2> */}
-            </MapCard>
-          </SecondSkillsBox>
-        </SkillsBox>
-      </AboutDiv>
-    </section>
-  );
-};
-
-export default About
-
-
-{/* <SkillsDiv>
-  <RowDiv>
-    <StorageIcon style={{ fontSize: 60, color: primaryColor, marginRight: 10 }} />
-    <SkillsTypograph>Software Development</SkillsTypograph>
-  </RowDiv>
-  <SkillsTypograph2>Data Structures, OOD, OOP, Algorithms, Critical Thinking, Problem Solving</SkillsTypograph2>
-</SkillsDiv>
-<SkillsDiv>
-  <RowDiv>
-    <ComputerIcon style={{ fontSize: 60, color: primaryColor, marginRight: 10 }} />
-    <SkillsTypograph>Full-stack</SkillsTypograph>
-  </RowDiv>
-  <SkillsTypograph2>HTML, CSS, JavaScript, React, Redux, TypeScript, Material UI, Bootstrap, SASS, Styled Components</SkillsTypograph2>
-</SkillsDiv>
-<SkillsDiv>
-  <RowDiv>
-    <DataObjectIcon style={{ fontSize: 60, color: primaryColor, marginRight: 10 }} />
-    <SkillsTypograph>Computer experience</SkillsTypograph>
-  </RowDiv>
-  <SkillsTypograph2>GIT, Node.js, Express.js, MongoDB, MySQL, Sequelize, RESTful APIs, GraphQL, Apollo, Mongoose, JWT, Bcrypt, Nodemailer, Heroku, AWS, Docker, Postman</SkillsTypograph2>
-</SkillsDiv> */}
+          </ToolSetCard> */}

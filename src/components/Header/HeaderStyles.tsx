@@ -10,7 +10,7 @@ export const HeaderBox = styled('header')({
   padding: "33px",
   position: "fixed",
   width: "100%",
-  height: "10%",
+  height: "100px",
   boxShadow: '0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%)',
   transition: 'top 0.3s',
   zIndex: 100,

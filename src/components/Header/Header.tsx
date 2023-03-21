@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import React, { Component } from "react";
 import { useState } from "react";
 import { StyledButton } from "../../utils/Button";
@@ -25,7 +26,7 @@ const Header = () => {
     setOpen(!open);
   };
 
-  const navLinks = ["about", "experience", "projects", "contact"];
+  const navLinks = ["about", "work", "contact"];
 
   const renderNavLink = (content: any) => {
 
@@ -38,9 +39,12 @@ const Header = () => {
     return (
       <ul key={content}>
         <li>
-          <StyledButton className="glowing-btn" onClick={handleClickNav}>
-            <span className="glowing-txt">{content}</span>
+          <StyledButton onClick={handleClickNav}>
+            <span>{content}</span>
           </StyledButton>
+          {/* <button onClick={handleClickNav}>
+            <span>{content}</span>
+          </button> */}
         </li>
       </ul>
     );

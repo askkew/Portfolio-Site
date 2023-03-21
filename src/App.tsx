@@ -2,30 +2,29 @@ import React, { useEffect, useRef } from 'react';
 import './App.css';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
-import Experience from './Pages/Experience';
 import Header from './components/Header/Header';
 import Home from './Pages/Home';
-import Projects from './Pages/Projects';
+import Work from './Pages/Work';
 import Footer from './Pages/Footer';
 import ScrollButton from './components/scrolltop';
-import $ from 'jquery';
-import { ParallaxProvider } from 'react-scroll-parallax';
+import { styled } from '@mui/system';
+
+const Container = styled('div')({
+  background: 'radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%)'
+});
 
 function App() {
 
   return (
-    <div>
+    <Container>
       <Header/>
-      <ParallaxProvider>
-        <Home />
-        <About/>
-        <Experience/>
-        <Projects/>
-        <Contact/>
-      </ParallaxProvider>
+      <Home />
+      <About/>
+      <Work/>
+      <Contact/>
       <ScrollButton/>
       <Footer/>
-    </div>
+    </Container>
   );
 }
 

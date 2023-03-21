@@ -51,7 +51,7 @@ export const ContactCardMessageTitle = styled(Typography)({
   fontSize: "2.2rem",
   marginBottom: "10px",
   fontWeight: "bold",
-  color: "black",
+  color: "white",
   '@media (max-width: 768px)': {
     fontSize: "1.8rem",
   },

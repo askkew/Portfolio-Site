@@ -23,6 +23,9 @@ export const DetailTypograph = styled(Typography)({
     fontSize: "0.8rem",
     fontWeight: "600",
   },
+  '@media (max-width: 368px)': {
+    display: 'none',
+  },
 });
 
 export const SocialButtons = styled(RowDiv)({
@@ -31,4 +34,7 @@ export const SocialButtons = styled(RowDiv)({
   justifyContent: "left",
   alignItems: "left",
   marginRight: "1rem",
+  '@media (max-width: 368px)': {
+    display: 'none',
+  },
 });
