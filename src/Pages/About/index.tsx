@@ -27,7 +27,7 @@ const About = () => {
     <section id="about">
       <AboutDiv>
         <SkillsBox>
-          <ToolSetCard>
+          {/* <ToolSetCard>
             <AboutTitleTypograph>Toolset</AboutTitleTypograph>
             <ToolsetIcons>
               {
@@ -43,7 +43,7 @@ const About = () => {
                 })
               }
             </ToolsetIcons>
-          </ToolSetCard>
+          </ToolSetCard> */}
         </SkillsBox>
         {/* <Canvas>
           <OrbitControls enableZoom={false} autoRotate/>

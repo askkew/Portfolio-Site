@@ -7,17 +7,17 @@ import { IconButton, Link } from '@mui/material'
 import { transcode } from 'buffer'
 
 const IconStyle = {
-  fontSize: 78,
-}
+  fontSize: 90,
+};
 
 export const ToolIcons = [
-  <Link href="https://github.com/askkew" target="_blank" >
+  <a href="https://github.com/askkew" target="_blank" style={{color: 'inherit'}}>
     <GitHubIcon className="glowing-txt" style={IconStyle} />
-  </Link>,
-  <Link href="https://www.linkedin.com/in/luke-overbey-37b342235/" target="_blank" >
+  </a>,
+  <a href="https://www.linkedin.com/in/luke-overbey-37b342235/" target="_blank" style={{color: 'inherit'}}>
     <LinkedInIcon className="glowing-txt" style={IconStyle} />
-  </Link>,
-  <EmailIcon onClick={() => window.open('mailto:lucasaoverbey@gmail.com')} className="glowing-txt" style={IconStyle} />,
+  </a>,
+  <EmailIcon onClick={() => window.open('mailto:lucasaoverbey@gmail.com')} className="glowing-txt" style={IconStyle} />
 ]
 
 export const ToolIconLabel = [

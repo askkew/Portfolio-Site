@@ -1,4 +1,4 @@
-import { ContactCard, SocialButtons, ContactDiv, ContactCardMessageTitle, CustomTextField } from "./ContactStyles";
+import { ContactCard, SocialButtons, ContactDiv, ContactCardMessageTitle, CustomTextField, CustomTextFieldMessage } from "./ContactStyles";
 import { IconButton, Button, Link, Typography, TextField, FormControlLabel, FormGroup, InputBase, Divider } from "@mui/material";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -17,7 +17,7 @@ const Contact = () => {
           <ContactCardMessageTitle>Contact Me</ContactCardMessageTitle>
           <CustomTextField id="outlined-basic"/>
           <CustomTextField id="outlined-basic"/>
-          <CustomTextField id="outlined-basic"/>
+          <CustomTextFieldMessage id="outlined-basic"/>
           <StyledButton style={{width: '90%', marginLeft: '10px'}}>Send</StyledButton>
           {/* <Divider style={{color: 'white', height: '10px'}}/> */}
           <ContactCardMessageTitle>Connect with me</ContactCardMessageTitle>
