@@ -19,16 +19,16 @@ const Home = () => {
         <Right>
           <StyledCanvas>
             <OrbitControls enableZoom={false} autoRotate/>
-            <ambientLight intensity={1}/>
+            <ambientLight intensity={0.5}/>
             <directionalLight position={[3,2,1]}/>
             <mesh>
-              <dodecahedronGeometry args={[1, 0]}/>
-              <meshStandardMaterial color="hsl(213, 89%, 79%)">
+              <dodecahedronGeometry args={[1, 2]}/>
+              <meshStandardMaterial color="rgb(231,212,121)">
               </meshStandardMaterial>
             </mesh>
           </StyledCanvas>
         </Right>
-        <RightRight />
+        {/* <RightRight /> */}
       </HomeDiv>
     </section>
   );

@@ -7,9 +7,18 @@ export const HomeDiv = styled('div')({
   display: "flex",
   flexDirection: "row",
   justifyContent: "center",
+  justifyItems: "center",
   alignItems: "center",
   height: '100%',
-  width: '100%',
+  width: '700px',
+  '@media (max-width: 1068px)': {
+    height: '50%',
+    flexDirection: 'column',
+    width: '400px',
+  },
+  '@media (max-width: 368px)': {
+    width: '150px',
+  },
 });
 
 export const Left = styled('div')({
@@ -18,7 +27,7 @@ export const Left = styled('div')({
   justifyContent: "center",
   height: "100%",
   width: "100%",
-  alignItems: "flex-end",
+  alignItems: "center",
 });
 
 export const Right = styled('div')({
@@ -26,9 +35,10 @@ export const Right = styled('div')({
   flexDirection: "column",
   justifyContent: "flex-start",
   height: "100%",
-  width: "50%",
+  minWidth: "50%",
+  width: "100%",
   '@media (max-width: 768px)': {
-    display: "none",
+    // display: "none",
   },
 });
 
@@ -37,7 +47,7 @@ export const RightRight = styled('div')({
   flexDirection: "column",
   justifyContent: "flex-start",
   height: "100%",
-  width: "50%",
+  width: "20%",
   '@media (max-width: 768px)': {
     display: "none",
   },
@@ -51,7 +61,7 @@ export const NameTypograph = styled('h1')({
   margin: "0",
   padding: "0",
   '@media (max-width: 768px)': {
-    fontSize: "4rem",
+    fontSize: "1.6rem",
   },
 });
 
@@ -63,7 +73,7 @@ export const SubtitleTypograph = styled('h1')({
   margin: "0",
   padding: "0",
   '@media (max-width: 768px)': {
-    fontSize: "1.6rem",
+    fontSize: "1rem",
   },
 });
 
@@ -72,7 +82,8 @@ export const StyledCanvas = styled(Canvas)({
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "flex-start",
+  minWidth: "50%",
   '@media (max-width: 768px)': {
-    display: "none",
+    // display: "none",
   },
 });
