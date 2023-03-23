@@ -14,7 +14,6 @@ import { FaBootstrap } from 'react-icons/fa'
 import { primaryColor } from '../../utils/content'
 import { IconButton } from '@mui/material'
 import { transcode } from 'buffer'
-import { StyledSpan } from './AboutStyles'
 
 const IconStyle = {
   fontSize: 38,
@@ -36,20 +35,20 @@ export const ToolIcons = [
   <FaJava className="glowing-txt" style={IconStyle} />,
 ]
 
-export const ToolIconLabel = [
-  <StyledSpan className="glowing-txt">JavaScript</StyledSpan>,
-  <StyledSpan className="glowing-txt">TypeScript</StyledSpan>,
-  <StyledSpan className="glowing-txt">MySQL</StyledSpan>,
-  <StyledSpan className="glowing-txt">HTML5</StyledSpan>,
-  <StyledSpan className="glowing-txt">CSS3</StyledSpan>,
-  <StyledSpan className="glowing-txt">MongoDB</StyledSpan>,
-  <StyledSpan className="glowing-txt">React</StyledSpan>,
-  <StyledSpan className="glowing-txt">Redux</StyledSpan>,
-  <StyledSpan className="glowing-txt">NodeJS</StyledSpan>,
-  <StyledSpan className="glowing-txt">PHP</StyledSpan>,
-  <StyledSpan className="glowing-txt">Bootstrap</StyledSpan>,
-  <StyledSpan className="glowing-txt">Java</StyledSpan>,
-]
+// export const ToolIconLabel = [
+//   <StyledSpan className="glowing-txt">JavaScript</StyledSpan>,
+//   <StyledSpan className="glowing-txt">TypeScript</StyledSpan>,
+//   <StyledSpan className="glowing-txt">MySQL</StyledSpan>,
+//   <StyledSpan className="glowing-txt">HTML5</StyledSpan>,
+//   <StyledSpan className="glowing-txt">CSS3</StyledSpan>,
+//   <StyledSpan className="glowing-txt">MongoDB</StyledSpan>,
+//   <StyledSpan className="glowing-txt">React</StyledSpan>,
+//   <StyledSpan className="glowing-txt">Redux</StyledSpan>,
+//   <StyledSpan className="glowing-txt">NodeJS</StyledSpan>,
+//   <StyledSpan className="glowing-txt">PHP</StyledSpan>,
+//   <StyledSpan className="glowing-txt">Bootstrap</StyledSpan>,
+//   <StyledSpan className="glowing-txt">Java</StyledSpan>,
+// ]
 
 export const StyledScrollButton = styled(IconButton)({
   'position': 'relative',

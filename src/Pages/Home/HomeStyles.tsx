@@ -1,29 +1,51 @@
 import React from "react";
 import { styled } from "@mui/system";
 import { Box, Typography } from "@mui/material";
+import { Canvas } from "@react-three/fiber";
 
-export const TitleDiv = styled('div')({
+export const HomeDiv = styled('div')({
+  display: "flex",
+  flexDirection: "row",
+  justifyContent: "center",
+  alignItems: "center",
+  height: '100%',
+  width: '100%',
+});
+
+export const Left = styled('div')({
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
-  alignItems: "center",
-  // //background: "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%)",
-  color: "#e6f1ff",
-  fontSize: "2rem",
-  textAlign: "center",
-  textShadow: "0px 0px 10px #000000",
-  backgroundClip: "border-box",
-  backgroundAttachment: "fixed",
-  backgroundSize: "cover",
-  backgroundPosition: "center",
-  backgroundRepeat: "no-repeat",
+  height: "100%",
+  width: "100%",
+  alignItems: "flex-end",
 });
 
-export const NameTypograph = styled(Typography)({
-  fontFamily: '"Raleway", sans-serif',
+export const Right = styled('div')({
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "flex-start",
+  height: "100%",
+  width: "50%",
+  '@media (max-width: 768px)': {
+    display: "none",
+  },
+});
+
+export const RightRight = styled('div')({
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "flex-start",
+  height: "100%",
+  width: "50%",
+  '@media (max-width: 768px)': {
+    display: "none",
+  },
+})
+
+export const NameTypograph = styled('h1')({
   fontSize: '2em',
-  fontWeight: '400',
-  letterSpacing: '1em',
+  fontWeight: '600',
   textShadow: "0px 0px 10px #000000",
   color: "#e6f1ff",
   margin: "0",
@@ -33,16 +55,24 @@ export const NameTypograph = styled(Typography)({
   },
 });
 
-export const SubtitleTypograph = styled(Typography)({
-  fontFamily: '"Raleway", sans-serif',
-  fontSize: '1em',
-  fontWeight: '400',
-  letterSpacing: '1em',
+export const SubtitleTypograph = styled('h1')({
+  fontSize: '2em',
+  fontWeight: '200',
   textShadow: "0px 0px 10px #000000",
   color: "#e6f1ff",
   margin: "0",
   padding: "0",
   '@media (max-width: 768px)': {
     fontSize: "1.6rem",
+  },
+});
+
+export const StyledCanvas = styled(Canvas)({
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "flex-start",
+  '@media (max-width: 768px)': {
+    display: "none",
   },
 });

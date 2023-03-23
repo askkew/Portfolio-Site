@@ -1,87 +1,33 @@
-import React, { useEffect } from "react";
-import { AboutDiv, AboutCard, SkillsDiv, SkillsTypograph, AboutTitleTypograph, SkillsTypograph2, ToolsetIcons, ToolSetCard, SkillsBox, SecondSkillsBox, MapCard } from "./AboutStyles";
-import { StyledScrollButton, ToolIconLabel, ToolIcons } from './icons'
+import { AboutDiv, ToolsetIcons, DetailsBox, LanguageIcons, BallContainer, DetailTitle, DetailDescription, DetailSubTitle } from "./AboutStyles";
+import { StyledScrollButton, ToolIcons } from './icons'
 import { RiBracesFill } from 'react-icons/ri'
 import { ColumnDiv } from "../../utils/content";
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls } from "@react-three/drei";
 import { DirectionalLight } from "three";
-import { PerspectiveCamera, RenderTexture } from "@react-three/drei/core";
 import { Text } from "@react-three/drei";
+// import { SectionWrapper } from "../hoc";
+import { technologies } from "../../utils/Constants";
+import BallCanvas from "../../components/Ball/Ball";
 
 const About = () => {
-  const [isDesktop, setIsDesktop] = React.useState(false);
-  const [isMobile, setIsMobile] = React.useState(false);
-
-  useEffect(() => {
-    if (window.innerWidth > 1390) {
-      setIsDesktop(true);
-      setIsMobile(false);
-    } else {
-      setIsMobile(true);
-      setIsDesktop(false);
-    }
-  }, []);
 
   return (
     <section id="about">
       <AboutDiv>
-        <SkillsBox>
-          {/* <ToolSetCard>
-            <AboutTitleTypograph>Toolset</AboutTitleTypograph>
-            <ToolsetIcons>
-              {
-                ToolIcons.map((icon, index) => {
-                  return (
-                    <StyledScrollButton disableRipple key={index}>
-                      {icon}
-                      {
-                        ToolIconLabel[index] && <span>{ToolIconLabel[index]}</span>
-                      }
-                    </StyledScrollButton>
-                  )
-                })
-              }
-            </ToolsetIcons>
-          </ToolSetCard> */}
-        </SkillsBox>
-        {/* <Canvas>
-          <OrbitControls enableZoom={false} autoRotate/>
-          <ambientLight intensity={1}/>
-          <directionalLight position={[3,2,1]}/>
-          <mesh>
-            <sphereGeometry args={[1, 12]} />
-            <meshStandardMaterial color="green">
-              <RenderTexture attach="map">
-                <PerspectiveCamera makeDefault position={[0, 0, 5]} />
-                <color attach="background" args={['darkblue']} />
-              </RenderTexture>
-            </meshStandardMaterial>
-          </mesh>
-        </Canvas> */}
+        <DetailsBox>
+          <DetailTitle>About.</DetailTitle>
+          <DetailSubTitle>My tech stack.</DetailSubTitle>
+          <DetailDescription>I have been coding for almost 6 years but recently focused on web development near the end of my education at UTSA, where I graduated with a Bachelor of Science in Computer Science</DetailDescription>
+        </DetailsBox>
+        <ToolsetIcons>
+          {technologies.map((technology) => (
+            <BallContainer key={technology.name}>
+              <BallCanvas icon={technology.icon} />
+            </BallContainer>
+          ))}
+        </ToolsetIcons>
       </AboutDiv>
     </section>
   );
 };
 
 export default About
-
-
-
-          {/* <ToolSetCard>
-            <AboutTitleTypograph>Toolset</AboutTitleTypograph>
-            <ToolsetIcons>
-              {
-                ToolIcons.map((icon, index) => {
-                  return (
-                    <StyledScrollButton disableRipple key={index}>
-                      {icon}
-                      {
-                        ToolIconLabel[index] && <span>{ToolIconLabel[index]}</span>
-                      }
-                    </StyledScrollButton>
-                  )
-                })
-              }
-            </ToolsetIcons>
-          </ToolSetCard> */}
