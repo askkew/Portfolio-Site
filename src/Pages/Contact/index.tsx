@@ -13,6 +13,7 @@ const Contact = () => {
   return (
     <section id="contact">
       <ContactDiv>
+        {/* <Map /> */}
         <ContactCard>
           <ContactCardMessageTitle>Contact Me</ContactCardMessageTitle>
           <CustomTextField id="outlined-basic"/>
@@ -34,7 +35,6 @@ const Contact = () => {
           </SocialButtons>
           <StyledButton style={{width: '90%', marginLeft: '10px', marginTop: '10px'}}>Resume</StyledButton>
         </ContactCard>
-        {/* <Map /> */}
       </ContactDiv>
     </section> 
   );

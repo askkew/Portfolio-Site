@@ -3,9 +3,10 @@ import styled from "@emotion/styled";
 import { RowDiv } from "../../utils/content";
 import { primary, secondary, tertiary } from "../../utils/content";
 import { IconButton, Button, Link, Typography, Card, InputBase } from "@mui/material";
+
 export const ContactDiv = styled("div")({
   display: "flex",
-  flexDirection: "column",
+  flexDirection: "row",
   justifyContent: "center",
   alignItems: "center",
 });

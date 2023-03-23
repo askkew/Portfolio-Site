@@ -4,18 +4,32 @@ import { IconButton, Button, Link, Typography } from '@mui/material';
 
 export const ProjectDiv = styled('div')({
   display: 'flex',
+  // gridTemplateColumns: 'repeat(4, 1fr)',
   flexDirection: 'row',
   justifyContent: 'center',
   alignItems: 'center',
+  gap: '20px',
   '@media (max-width: 768px)': {
     flexDirection: 'column',
     justifyContent: 'center',
   },
 });
 
-export const ProjectTitleTypograph = styled(Typography)({
+export const ProjectCard = styled('div')({
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
+  backgroundColor: 'rgb(16,12,40)',
+  maxWidth: '400px',
+  boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+  padding: '10px',
+  borderRadius: '15px',
+});
+
+export const ProjectTitleTypograph = styled('h1')({
   fontSize: "2.2rem",
-  fontWeight: "bold",
+  fontWeight: "700",
   textShadow: "0px 0px 10px #000000",
   color: "#e6f1ff",
   margin: "0",
@@ -25,9 +39,53 @@ export const ProjectTitleTypograph = styled(Typography)({
   },
 });
 
-export const ProjectTypograph = styled(Typography)({
+export const WorkIntroDiv = styled('div')({
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
+  marginBottom: '50px',
+});
+
+export const WorkTitle = styled('h1')({
+  fontSize: "2.2rem",
+  fontWeight: "200",
+  textShadow: "0px 0px 10px #000000",
+  color: "#e6f1ff",
+  margin: "0",
+  padding: 10,
+  '@media (max-width: 768px)': {
+    fontSize: "1rem",
+  },
+});
+
+export const WorkTitleDescription = styled('h1')({
   fontSize: "1.4rem",
-  fontWeight: "bold",
+  fontWeight: "200",
+  textShadow: "0px 0px 10px #000000",
+  color: "#e6f1ff",
+  margin: "0",
+  padding: 10,
+  '@media (max-width: 768px)': {
+    fontSize: "1rem",
+  },
+});
+
+export const ProjectDescription = styled('h1')({
+  fontSize: "1rem",
+  fontWeight: "200",
+  textShadow: "0px 0px 10px #000000",
+  color: "#e6f1ff",
+  margin: "0",
+  padding: 10,
+  '@media (max-width: 768px)': {
+    fontSize: "1rem",
+  },
+});
+
+export const ProjectTypograph = styled('h1')({
+  fontSize: "1.4rem",
+  fontWeight: "700",
   textShadow: "0px 0px 10px #000000",
   color: "#e6f1ff",
   margin: "0",
@@ -35,4 +93,84 @@ export const ProjectTypograph = styled(Typography)({
   '@media (max-width: 768px)': {
     fontSize: "0.8rem",
   },
+});
+
+export const ProjectTagOne = styled('h1')({
+  fontSize: "1rem",
+  fontWeight: "200",
+  // textShadow: "0px 0px 10px #000000",
+  color: "rgb(78,87,116)",
+  margin: "0",
+  padding: "0",
+});
+
+export const ProjectTagTwo = styled('h1')({
+  fontSize: "1rem",
+  fontWeight: "200",
+  // textShadow: "0px 0px 10px #000000",
+  color: "rgb(48,68,82)",
+  margin: "0",
+  padding: "0",
+});
+
+export const ProjectTagThree = styled('h1')({
+  fontSize: "1rem",
+  fontWeight: "200",
+  // textShadow: "0px 0px 10px #000000",
+  color: "rgb(108,55,90)",
+  margin: "0",
+  padding: "0",
+});
+
+export const ProjectTagFour = styled('h1')({
+  fontSize: "1rem",
+  fontWeight: "200",
+  // textShadow: "0px 0px 10px #000000",
+  color: "rgb(108,55,90)",
+  margin: "0",
+  padding: "0",
+});
+
+export const TagsDiv = styled('div')({
+  display: 'flex',
+  flexDirection: 'row',
+  justifyContent: 'center',
+  alignItems: 'center',
+  gap: '10px',
+});
+
+export const GithubIconButton = styled(IconButton)({
+  backgroundImage: 'linear-gradient(#bdc3c7, #2c3e50)',
+  border: 0,
+  // boxShadow: 'rgba(0, 0, 0, .3) 0 5px 15px',
+  boxSizing: 'border-box',
+  borderRadius: '50px',
+  color: '#fff',
+  cursor: 'pointer',
+  fontSize: '.9em',
+  margin: '5px',
+  textAlign: 'center',
+  userSelect: 'none',
+  WebkitUserSelect: 'none',
+  touchAction: 'manipulation',
+  position: 'relative',
+  left: '150%',
+});
+
+export const LinkIconButton = styled(IconButton)({
+  backgroundImage: 'linear-gradient(#bdc3c7, #2c3e50)',
+  border: 0,
+  // boxShadow: 'rgba(0, 0, 0, .3) 0 5px 15px',
+  boxSizing: 'border-box',
+  borderRadius: '50px',
+  color: '#fff',
+  cursor: 'pointer',
+  fontSize: '.9em',
+  margin: '5px',
+  textAlign: 'center',
+  userSelect: 'none',
+  WebkitUserSelect: 'none',
+  touchAction: 'manipulation',
+  position: 'relative',
+  right: '150%',
 });

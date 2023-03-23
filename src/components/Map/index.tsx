@@ -1,28 +1,3 @@
-// import React from "react";
-// import {
-//   ComposableMap,
-//   Geographies,
-//   Geography,
-//   Annotation,
-//   ZoomableGroup
-// } from "react-simple-maps";
-
-// const geoUrl = "https://raw.githubusercontent.com/askkew/TexasJSON/main/state.json";
-
-// const Map = () => {
-//   return (
-//     <ComposableMap>
-//       <Geographies geography={geoUrl}>
-//         {({ geographies }) =>
-//           geographies.map(geo => <Geography key={geo.rsmKey} geography={geo} />)
-//         }
-//       </Geographies>
-//     </ComposableMap>
-//   );
-// };
-
-// export default Map;
-
 import React from "react";
 import { geoCentroid } from "d3-geo";
 import {
@@ -35,28 +10,18 @@ import {
 
 import allStates from "./allstates.json";
 
-const geoUrl = "https://raw.githubusercontent.com/askkew/TexasJSON/main/state.json";
+// const geoUrl = "https://raw.githubusercontent.com/askkew/TexasJSON/main/state.json";
+const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 // const geoUrl = "https://raw.githubusercontent.com/askkew/TexasJSON/main/Tx_Bndry_General_TIGER5m%20(1).json";
-
-const offsets = {
-  VT: [50, -8],
-  NH: [34, 2],
-  MA: [30, -1],
-  RI: [28, 2],
-  CT: [35, 10],
-  NJ: [34, 1],
-  DE: [33, 0],
-  MD: [47, 10],
-  DC: [49, 21]
-};
 
 const MapChart = () => {
   return (
     <ComposableMap projection="geoAlbersUsa"
     projectionConfig={{
+      scale: 1300,
     }}
     style={{
-      width: "300%",
+      width: "100%",
       height: "100%",
       overflow: 'hidden',
     }}
@@ -67,9 +32,11 @@ const MapChart = () => {
             {geographies.map(geo => (
               <Geography
                 key={geo.rsmKey}
+                // stroke="#FFF"
                 stroke="#FFF"
                 geography={geo}
-                fill="#DDD"
+                // fill="#DDD"
+                fill="rgb(21,29,41)"
                 style={{
                   default: { outline: "none" },
                   hover: { outline: "none" },
