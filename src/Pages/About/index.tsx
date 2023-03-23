@@ -27,7 +27,23 @@ const About = () => {
     <section id="about">
       <AboutDiv>
         <SkillsBox>
-
+          <ToolSetCard>
+            <AboutTitleTypograph>Toolset</AboutTitleTypograph>
+            <ToolsetIcons>
+              {
+                ToolIcons.map((icon, index) => {
+                  return (
+                    <StyledScrollButton disableRipple key={index}>
+                      {icon}
+                      {
+                        ToolIconLabel[index] && <span>{ToolIconLabel[index]}</span>
+                      }
+                    </StyledScrollButton>
+                  )
+                })
+              }
+            </ToolsetIcons>
+          </ToolSetCard>
         </SkillsBox>
         {/* <Canvas>
           <OrbitControls enableZoom={false} autoRotate/>

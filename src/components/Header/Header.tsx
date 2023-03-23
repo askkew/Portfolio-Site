@@ -40,11 +40,8 @@ const Header = () => {
       <ul key={content}>
         <li>
           <StyledButton onClick={handleClickNav}>
-            <span>{content}</span>
+            <span style={{marginLeft: '9px'}}>{content}</span>
           </StyledButton>
-          {/* <button onClick={handleClickNav}>
-            <span>{content}</span>
-          </button> */}
         </li>
       </ul>
     );

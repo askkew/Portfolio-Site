@@ -12,106 +12,42 @@ export const ContactDiv = styled("div")({
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
+  maxWidth: 'fit-content',
+  maxHeight: 'fit-content',
 });
 
-export const ContactCard = styled(Card)({
-  display: "flex",
-  flexDirection: "row",
-  justifyContent: "top",
-  borderRadius: "2rem",
-  backgroundColor: secondary ,
-  width: "1000px",
-  height: "500px",
-  margin: 10,
-  zIndex: 88,
-  '@media (max-width: 768px)': {
-    width: "470px",
-    height: "840px",
-    justifyContent: "center",
-    flexDirection: "column",
-  },
-});
-
-export const ContactCardMessage = styled('div')({
+export const ContactCard = styled('form')({
   display: "flex",
   flexDirection: "column",
-  justifyContent: "top",
-  alignItems: "center",
-  borderRadius: "2rem 2rem 2rem 2rem",
-  width: "50%",
-  height: "100%",
-  backgroundColor: primary,
-  '@media (max-width: 768px)': {
-    width: "100%",
-    height: "50%",
-  },
+  justifyContent: "center",
+  backgroundColor: 'transparent' ,
+  border: 'none',
+  boxShadow: 'none',
+  gap: '15px',
+  width: "500px",
+  // backgroundColor: 'red',
+  paddingBottom: '10px',
+  paddingLeft: '20px',
 });
 
-export const ContactCardMessageTitle = styled(Typography)({
+export const ContactCardMessageTitle = styled('h1')({
   fontSize: "2.2rem",
-  marginBottom: "10px",
-  fontWeight: "bold",
+  marginBottom: "5px",
+  marginLeft: "10px",
+  fontWeight: "200",
   color: "white",
   '@media (max-width: 768px)': {
     fontSize: "1.8rem",
   },
 });
 
-export const ContactCardMessageText = styled(Typography)({
-  fontSize: "1.2rem",
-  marginBottom: "10px",
-  fontWeight: "bold",
-  color: "black",
-  '@media (max-width: 768px)': {
-    fontSize: "1rem",
-  },
-});
-
-export const ContactCardInfo = styled('div')({
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "top",
-  alignItems: "center",
-  width: "50%",
-  height: "100%",
-  '@media (max-width: 768px)': {
-    width: "100%",
-    height: "50%",
-  },
-});
-
 export const SocialButtons = styled(RowDiv)({
   display: "flex",
   flexDirection: "row",
-  justifyContent: "left",
-  alignItems: "left",
-});
-
-export const StyledGithubIcon = styled(GitHubIcon)({
-  transform: 'scale(2.6)',
-  margin: 15,
-  color: 'linear-gradient(#8614f8 0, #760be0 100%)',
-  '&:hover': {
-    opacity: .7,
-  },
-});
-
-export const StyledLinkedInIcon = styled(LinkedInIcon)({
-  transform: 'scale(2.6)',
-  margin: 15,
-  color: 'linear-gradient(#8614f8 0, #760be0 100%)',
-  '&:hover': {
-    opacity: .7,
-  },
-});
-
-export const StyledEmailIcon = styled(EmailIcon)({
-  transform: 'scale(2.6)',
-  margin: 15,
-  color: 'linear-gradient(#8614f8 0, #760be0 100%)',
-  '&:hover': {
-    opacity: .7,
-  },
+  justifyContent: "center",
+  alignItems: "center",
+  paddingRight: '30px',
+  gap: '50px',
 });
 
 export const CustomTextField = styled(InputBase)({

@@ -9,7 +9,7 @@ const Home = () => {
 
   return (
     <section id="home">
-      <ComputersCanvas />
+      {/* <ComputersCanvas /> */}
     </section>
   );
 };

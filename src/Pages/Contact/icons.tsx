@@ -3,18 +3,21 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import { primaryColor } from '../../utils/content'
-import { IconButton } from '@mui/material'
+import { IconButton, Link } from '@mui/material'
 import { transcode } from 'buffer'
 
 const IconStyle = {
-  fontSize: 68,
-  marginRight: 10,
+  fontSize: 78,
 }
 
 export const ToolIcons = [
-  <GitHubIcon className="glowing-txt" style={IconStyle} />,
-  <LinkedInIcon className="glowing-txt" style={IconStyle} />,
-  <EmailIcon className="glowing-txt" style={IconStyle} />,
+  <Link href="https://github.com/askkew" target="_blank" >
+    <GitHubIcon className="glowing-txt" style={IconStyle} />
+  </Link>,
+  <Link href="https://www.linkedin.com/in/luke-overbey-37b342235/" target="_blank" >
+    <LinkedInIcon className="glowing-txt" style={IconStyle} />
+  </Link>,
+  <EmailIcon onClick={() => window.open('mailto:lucasaoverbey@gmail.com')} className="glowing-txt" style={IconStyle} />,
 ]
 
 export const ToolIconLabel = [
@@ -23,7 +26,7 @@ export const ToolIconLabel = [
   <span className="glowing-txt">Email</span>,
 ]
 
-export const StyledScrollButton = styled(IconButton)({
+export const StyledSocialButton = styled(IconButton)({
   'position': 'relative',
   'color': 'var(--glow-color)',
   'cursor': 'pointer',
