@@ -10,7 +10,6 @@ export const ContactDiv = styled("div")({
   justifyContent: "center",
   alignItems: "center",
   overflow: "hidden",
-  position: "relative",
 });
 
 export const ContactContainer = styled("div")({
@@ -19,8 +18,9 @@ export const ContactContainer = styled("div")({
   justifyContent: "center",
   alignItems: "center",
   width: "1200px",
-  position: 'absolute',
-  left: '40%',
+  '@media (max-width: 1068px)': {
+    width: "100%",
+  },
 });
 
 export const ContactCard = styled('form')({
@@ -31,8 +31,6 @@ export const ContactCard = styled('form')({
   backgroundColor: 'transparent' ,
   border: 'none',
   boxShadow: 'none',
-  backdropFilter: 'blur(20px)',
-  borderRadius: '30px',
   gap: '15px',
   width: "500px",
   paddingBottom: '10px',
@@ -59,6 +57,7 @@ export const SocialButtons = styled(RowDiv)({
   gap: '50px',
   '@media (max-width: 768px)': {
     gap: '20px',
+    flexDirection: "column",
   },
 });
 

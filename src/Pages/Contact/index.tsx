@@ -13,7 +13,7 @@ const Contact = () => {
   return (
     <section id="contact">
       <ContactDiv>
-      <img src="TEXASMAP23.png" alt='tempimage' height='1000px' style={{width: '100%'}}/>
+      {/* <img src="TEXASMAP23.png" alt='tempimage' height='1000px' style={{width: '100%'}}/> */}
         <ContactContainer>
           <ContactCard>
             <ContactCardMessageTitle>Contact Me</ContactCardMessageTitle>

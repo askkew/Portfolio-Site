@@ -2,17 +2,24 @@ import styled from '@emotion/styled';
 import { RowDiv } from '../../utils/content';
 import { IconButton, Button, Link, Typography } from '@mui/material';
 
-export const ProjectDiv = styled('div')({
+export const ProjectContainer = styled('div')({
   display: 'flex',
-  flexDirection: 'row',
+  justifyContent: 'center',
+});
+
+export const ProjectDiv = styled('div')({
+  display: 'grid',
+  gridTemplateColumns: 'repeat(3, 1fr)',
+  // flexDirection: 'row',
   alignItems: 'center',
   justifyItems: 'center',
   justifyContent: 'center',
   gap: '20px',
+  '@media (max-width: 1068px)': {
+    gridTemplateColumns: 'repeat(2, 1fr)',
+  },
   '@media (max-width: 768px)': {
-    flexDirection: 'column',
-    justifyContent: 'center',
-    display: 'grid',
+    gridTemplateColumns: 'repeat(1, 1fr)',
   },
 });
 
@@ -20,15 +27,17 @@ export const ProjectCard = styled('div')({
   position: 'relative',
   display: 'flex',
   flexDirection: 'column',
-  justifyContent: 'center',
+  justifyContent: 'top',
   alignItems: 'center',
   backgroundColor: 'rgb(16,12,40)',
-  width: '320px',
   boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
-  padding: '10px',
+  padding: '7px',
   borderRadius: '15px',
-  height: '380px',
-  // overflow: 'hidden',
+  width: '285px',
+  height: '378px',
+  '@media (max-width: 368px)': {
+    width: '200px',
+  },
 });
 
 export const ProjectTitleTypograph = styled('h1')({
@@ -187,3 +196,10 @@ export const LinkButtonsContainer = styled('div')({
   zIndex: 100,
   top: '1%',
 })
+
+export const ProjectImage = styled('img')({
+  height: '50%',
+  '@media (max-width: 368px)': {
+    height: '30%',
+  },
+});

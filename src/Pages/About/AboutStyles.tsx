@@ -20,6 +20,9 @@ export const AboutDiv = styled('div')({
   alignItems: "center",
   height: '100vh',
   width: '100%',
+  '@media (max-width: 568px)': {
+    flexDirection: "column",
+  },
 });
 
 export const ToolsetIcons = styled('div')({
@@ -87,6 +90,10 @@ export const BallContainer = styled('div')({
   '@media (max-width: 368px)': {
     width: "45px",
     height: "45px",
+  },
+  '@media (max-width: 268px)': {
+    width: "30px",
+    height: "30px",
   },
 });
 
