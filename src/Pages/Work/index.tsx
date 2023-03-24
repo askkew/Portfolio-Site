@@ -49,7 +49,7 @@ const projectData = [
 const Projects = () => {
   return (
     <section id="work">
-      {/* <WorkIntroDiv>
+      <WorkIntroDiv>
         <WorkTitle>My work and experience</WorkTitle>
         <WorkTitleDescription>Here are some of my projects and work experience</WorkTitleDescription>
       </WorkIntroDiv>
@@ -78,7 +78,7 @@ const Projects = () => {
             </TagsDiv>
           </ProjectCard>
         ))}
-      </ProjectDiv> */}
+      </ProjectDiv>
     </section> 
   );
 };

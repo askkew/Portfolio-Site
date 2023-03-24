@@ -9,6 +9,18 @@ export const ContactDiv = styled("div")({
   flexDirection: "row",
   justifyContent: "center",
   alignItems: "center",
+  overflow: "hidden",
+  position: "relative",
+});
+
+export const ContactContainer = styled("div")({
+  display: "flex",
+  flexDirection: "row",
+  justifyContent: "center",
+  alignItems: "center",
+  width: "1200px",
+  position: 'absolute',
+  left: '40%',
 });
 
 export const ContactCard = styled('form')({
@@ -19,6 +31,8 @@ export const ContactCard = styled('form')({
   backgroundColor: 'transparent' ,
   border: 'none',
   boxShadow: 'none',
+  backdropFilter: 'blur(20px)',
+  borderRadius: '30px',
   gap: '15px',
   width: "500px",
   paddingBottom: '10px',
