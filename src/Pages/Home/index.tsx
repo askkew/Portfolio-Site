@@ -7,7 +7,6 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import CanvasLoader from "../../components/Ball/Loader";
 
-
 const Home = () => {
 
   return (
