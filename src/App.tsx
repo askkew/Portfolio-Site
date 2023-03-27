@@ -10,7 +10,8 @@ import ScrollButton from './components/scrolltop';
 import { styled } from '@mui/system';
 
 const Container = styled('div')({
-  background: 'radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%)'
+  // background: 'radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%)'
+  background: 'rgb(5,8,22)'
 });
 
 function App() {

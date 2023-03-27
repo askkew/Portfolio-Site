@@ -30,6 +30,7 @@ export const ProjectCard = styled('div')({
   justifyContent: 'top',
   alignItems: 'center',
   backgroundColor: 'rgb(16,12,40)',
+  // backgroundColor: '#885f7f',
   boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
   padding: '7px',
   borderRadius: '15px',

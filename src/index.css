@@ -5,7 +5,7 @@
 }
 
 :root {
-  --glow-color: hsl(213, 89%, 79%);
+  --glow-color: hsl(250, 89%, 79%);
 }
 
 ::-webkit-scrollbar {
@@ -49,4 +49,10 @@ section {
   justify-content: center;
   flex-direction: column;
   min-height: 100vh;
+}
+
+#home{
+  background-image: url('https://raw.githubusercontent.com/adrianhajdin/project_3D_developer_portfolio/main/src/assets/herobg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }

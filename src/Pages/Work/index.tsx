@@ -66,7 +66,7 @@ const Projects = () => {
           {projectData.map((project, index) => (
             <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
               <ProjectCard>
-                {/* <LinkButtonsContainer>
+                <LinkButtonsContainer>
                   <GithubIconButton>
                     <Link href={project.githublink} target="_blank" style={{color: 'inherit'}}>
                       <AiFillGithub size={20} />
@@ -77,7 +77,7 @@ const Projects = () => {
                       <BiLinkExternal size={20} />
                     </Link>
                   </LinkIconButton>
-                </LinkButtonsContainer> */}
+                </LinkButtonsContainer>
                 <ProjectImage src={project.image} alt='tempimage' height='100px' id='projectpicture'/>
                 <ProjectTitleTypograph>{project.title}</ProjectTitleTypograph>
                 <ProjectDescription>{project.description}</ProjectDescription>

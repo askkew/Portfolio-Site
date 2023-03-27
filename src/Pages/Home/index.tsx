@@ -8,13 +8,16 @@ import { OrbitControls } from "@react-three/drei";
 import CanvasLoader from "../../components/Ball/Loader";
 import Description from "../../components/Description";
 
+
+//#8800c7
 const Home = () => {
 
   return (
     <section id="home">
       <HomeDiv>
         <Left>
-          <NameTypograph>Hi, I'm <span style={{color: 'hsl(213, 89%, 79%)'}}>Lucas</span></NameTypograph>
+          {/* <NameTypograph>Hi, I'm <span style={{color: 'hsl(218, 89%, 79%)'}}>Lucas</span></NameTypograph> */}
+          <NameTypograph>Hi, I'm <span style={{color: 'hsl(250, 89%, 79%)'}}>Lucas</span></NameTypograph>
           <Description />
         </Left>
         <Right>
