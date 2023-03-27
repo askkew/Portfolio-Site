@@ -6,6 +6,7 @@ import ComputersCanvas from "../../components/canvas";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import CanvasLoader from "../../components/Ball/Loader";
+import Description from "../../components/Description";
 
 const Home = () => {
 
@@ -13,8 +14,8 @@ const Home = () => {
     <section id="home">
       <HomeDiv>
         <Left>
-          <NameTypograph>Hi, I'm <span style={{color: '#e6f1ff'}}>Lucas Overbey</span></NameTypograph>
-          <SubtitleTypograph>I'm a <span style={{color: '#e6f1ff'}}>Software Engineer</span></SubtitleTypograph>
+          <NameTypograph>Hi, I'm <span style={{color: 'hsl(213, 89%, 79%)'}}>Lucas</span></NameTypograph>
+          <Description />
         </Left>
         <Right>
           <StyledCanvas

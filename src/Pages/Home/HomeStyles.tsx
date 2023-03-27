@@ -54,9 +54,8 @@ export const RightRight = styled('div')({
 })
 
 export const NameTypograph = styled('h1')({
-  fontSize: '2em',
-  fontWeight: '600',
-  textShadow: "0px 0px 10px #000000",
+  fontSize: '3.6em',
+  fontWeight: '1500',
   color: "#e6f1ff",
   margin: "0",
   padding: "0",

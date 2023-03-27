@@ -1,0 +1,62 @@
+.container1,
+.container1:before,
+.container1:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.wrapper{
+  box-sizing: content-box;
+  background-color: transparent;;
+  height: 70px;
+  display: flex;
+}
+
+.words{
+  overflow: hidden;
+}
+
+.label1{
+  color: white;
+  font-size: 35px;
+}
+
+.itemspan{
+  overflow: hidden;
+  display: block;
+  height: 100%;
+  padding-left: 10px;
+  color: hsl(213, 89%, 79%);
+  animation: spin_words 6s infinite;
+}
+
+@keyframes spin_words{
+  10%{
+    transform: translateY(-112%);
+  }
+  25%{
+    transform: translateY(-100%);
+  }
+  35%{
+    transform: translateY(-212%);
+  }
+  50%{
+    transform: translateY(-200%);
+  }
+  60%{
+    transform: translateY(-312%);
+  }
+  75%{
+    transform: translateY(-300%);
+  }
+  85%{
+    transform: translateY(-412%);
+  }
+  100%{
+    transform: translateY(-400%);
+  }
+} 
