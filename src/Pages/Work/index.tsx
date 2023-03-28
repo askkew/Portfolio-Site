@@ -12,13 +12,16 @@ import { ProjectDiv,
   GithubIconButton,
   LinkIconButton,
   LinkButtonsContainer,
-  ProjectImage } from "./WorkStyles";
+  ProjectImage, 
+  LinkGithub,
+  LinkLink} from "./WorkStyles";
 import { Link } from "@mui/material";
 import { fadeIn, RowDiv } from "../../utils/content";
 import { AiFillGithub } from "react-icons/ai";
 import { BiLinkExternal } from "react-icons/bi";
 import { motion } from "framer-motion";
 import { projectData } from "../../utils/Constants";
+import './work.css';
 
 const Projects = () => {
   return (
@@ -32,16 +35,12 @@ const Projects = () => {
           {projectData.map((project, index) => (
             <ProjectCard>
               <LinkButtonsContainer>
-                <GithubIconButton>
-                  <Link href={project.githublink} target="_blank" style={{color: 'inherit'}}>
-                    <AiFillGithub size={20} />
-                  </Link>
-                </GithubIconButton>
-                <LinkIconButton>
-                  <Link href={project.link} target="_blank" style={{color: 'inherit'}}>
-                    <BiLinkExternal size={20} />
-                  </Link>
-                </LinkIconButton>
+                <LinkGithub href={project.githublink} className="icon2 icon--github2">
+                  <i className="ri-github-line"></i>
+                </LinkGithub>
+                <LinkLink href={project.link} className="icon2 icon--links">
+                  <i className="ri-links-line"></i>
+                </LinkLink>
               </LinkButtonsContainer>
               <ProjectImage src={project.image} alt='tempimage' height='100px' id='projectpicture'/>
               <ProjectTitleTypograph>{project.title}</ProjectTitleTypograph>

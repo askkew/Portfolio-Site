@@ -1,17 +1,7 @@
-.iconwrapper{
-  font-family: 'Poppins', sans-serif;
-	background-color: transparent;
-	display: grid;
-	place-items: center;
-}
-.icons {
-  display: flex;
-  column-gap: 25px;
-}
-.icon {
+.icon2 {
 	display: inline-flex;
-	width: 60px;
-	height: 60px;
+	width: 50px;
+	height: 50px;
 	text-decoration: none;
 	font-size: 26px;
 	color: #fff;
@@ -20,25 +10,29 @@
 	transition-property: outline-offset, outline-color, background-color;
 	transition-duration: 0.25s;
 }
-.icon:hover {
+.icon2:hover {
 	outline-offset: 4px;
 }
-.icon i {
+.icon2 i {
 	margin: auto;
 }
-.icon:hover i {
+.icon2:hover i {
 	animation: shake 0.25s;
 }
-.icon--email:hover {
-  background-color: #ea4335;
-  outline-color: #ea4335;
-  cursor: pointer;
+.icon--links {
+  backdrop-filter: blur(2px);
+  margin-left: 150px;
+  margin-top: 10px;
 }
-.icon--linkedin:hover {
+.icon--github2{
+  backdrop-filter: blur(2px);
+  margin-top: 10px;
+}
+.icon--links:hover {
 	background-color: #0077b5;
 	outline-color: #0077b5;
 }
-.icon--github:hover {
+.icon--github2:hover {
 	background-color: #2ea44f;
 	outline-color: #2ea44f;
 }

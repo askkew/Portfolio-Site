@@ -84,17 +84,6 @@ const Contact = () => {
               {/* {loading ? "Sending..." : "Send"} */}
             </StyledForm>
             <ContactCardMessageTitle>Connect with me</ContactCardMessageTitle>
-            {/* <SocialButtons>
-              {
-                ToolIcons.map((icon, index) => {
-                  return (
-                    <StyledSocialButton disableRipple key={index}>
-                      {icon}
-                    </StyledSocialButton>
-                  )
-                })
-              }
-            </SocialButtons> */}
             <div className="iconwrapper">
               <div className="icons">
                 <a href="https://github.com/askkew" className="icon icon--github">

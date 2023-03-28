@@ -201,6 +201,7 @@ export const LinkButtonsContainer = styled('div')({
   position: 'absolute',
   zIndex: 100,
   top: '1%',
+  // bottom: '1%',
 })
 
 export const ProjectImage = styled('img')({
@@ -208,4 +209,14 @@ export const ProjectImage = styled('img')({
   '@media (max-width: 368px)': {
     height: '30%',
   },
+});
+
+export const LinkGithub = styled('a')({
+  // position: 'absolute',
+  // left: '100%',
+});
+
+export const LinkLink = styled('a')({
+  // position: 'absolute',
+  // right: '50%',
 });
