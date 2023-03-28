@@ -72,11 +72,11 @@ const Projects = () => {
                       <AiFillGithub size={20} />
                     </Link>
                   </GithubIconButton>
-                  <LinkIconButton>
+                  {/* <LinkIconButton>
                     <Link href={project.link} target="_blank" style={{color: 'inherit'}}>
                       <BiLinkExternal size={20} />
                     </Link>
-                  </LinkIconButton>
+                  </LinkIconButton> */}
                 </LinkButtonsContainer>
                 <ProjectImage src={project.image} alt='tempimage' height='100px' id='projectpicture'/>
                 <ProjectTitleTypograph>{project.title}</ProjectTitleTypograph>
