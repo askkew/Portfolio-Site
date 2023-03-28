@@ -1,0 +1,60 @@
+.iconwrapper{
+  font-family: 'Poppins', sans-serif;
+	background-color: transparent;
+	display: grid;
+	place-items: center;
+}
+.icons {
+  display: flex;
+  column-gap: 25px;
+}
+.icon {
+	display: inline-flex;
+	width: 60px;
+	height: 60px;
+	text-decoration: none;
+	font-size: 26px;
+	color: #fff;
+	border-radius: 50%;
+	outline: 2px solid #fff;
+	transition-property: outline-offset, outline-color, background-color;
+	transition-duration: 0.25s;
+}
+.icon:hover {
+	outline-offset: 4px;
+}
+.icon i {
+	margin: auto;
+}
+.icon:hover i {
+	animation: shake 0.25s;
+}
+.icon--email:hover {
+  background-color: #ea4335;
+  outline-color: #ea4335;
+  cursor: pointer;
+}
+.icon--linkedin:hover {
+	background-color: #0077b5;
+	outline-color: #0077b5;
+}
+.icon--github:hover {
+	background-color: #2ea44f;
+	outline-color: #2ea44f;
+}
+
+@keyframes shake {
+	10% {
+		transform: rotate(15deg);
+	}
+	20% {
+		transform: rotate(-15deg);
+	}
+	30% {
+		transform: rotate(15deg);
+	}
+	40% {
+		transform: rotate(-15deg);
+	}
+}
+

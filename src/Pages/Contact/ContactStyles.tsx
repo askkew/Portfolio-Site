@@ -78,3 +78,11 @@ export const CustomTextField = styled(InputBase)({
 export const CustomTextFieldMessage = styled(CustomTextField)({
   height: '120px',
 });
+
+export const StyledForm = styled('form')({
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  width: "90%",
+})

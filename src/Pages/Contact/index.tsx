@@ -1,14 +1,8 @@
-import { ContactCard, SocialButtons, ContactDiv, ContactCardMessageTitle, CustomTextField, CustomTextFieldMessage, ContactContainer } from "./ContactStyles";
-import { IconButton, Button, Link, Typography, TextField, FormControlLabel, FormGroup, InputBase, Divider, FormControl } from "@mui/material";
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import EmailIcon from '@mui/icons-material/Email';
-import { Parallax } from "react-scroll-parallax";
-import { StyledSocialButton, ToolIconLabel, ToolIcons } from "./icons";
-import Map from "../../components/Map";
+import { ContactCard, SocialButtons, ContactDiv, ContactCardMessageTitle, CustomTextField, CustomTextFieldMessage, ContactContainer, StyledForm } from "./ContactStyles";
 import { StyledButton } from "../../utils/Button";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import './contactindex.css';
 
 const Contact = () => {
 
@@ -70,39 +64,14 @@ const Contact = () => {
         }
       );
   };
-  // const ref = useRef();
-  // const [success, setSuccess] = useState(null);
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-
-  //   emailjs
-  //     .sendForm(
-  //       "service_u7benu6",
-  //       "CdGTRBxS7QeIBfyP4",
-  //       ref.current,
-  //       "CdGTRBxS7QeIBfyP4"
-  //     )
-  //     .then(
-  //       (result) => {
-  //         console.log(result.text);
-  //         setSuccess(true);
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //         setSuccess(false);
-  //       }
-  //     );
-  // };
   return (
     <section id="contact">
       <ContactDiv>
-      {/* <img src="TEXASMAP23.png" alt='tempimage' height='1000px' style={{width: '100%'}}/> */}
         <ContactContainer>
           <ContactCard>
             <ContactCardMessageTitle>Contact Me</ContactCardMessageTitle>
             {/* @ts-ignore */}
-            <form ref={formRef} onSubmit={handleSubmit}>
+            <StyledForm ref={formRef} onSubmit={handleSubmit}>
               <CustomTextField placeholder="Name" name="name" onChange={handleChange}/>
               <CustomTextField placeholder="Email" name="email" onChange={handleChange}/>
               <CustomTextFieldMessage
@@ -111,12 +80,11 @@ const Contact = () => {
                 rows={10}
                 onChange={handleChange}
               />
-              <StyledButton style={{width: '90%', marginLeft: '10px'}}>Send</StyledButton>
-              {loading ? "Sending..." : "Send"}
-            </form>
-            {/* <Divider style={{color: 'white', height: '10px'}}/> */}
+              <StyledButton style={{width: '50%', paddingLeft: '25px', marginLeft: '10px', marginTop: '10px'}}>Send</StyledButton>
+              {/* {loading ? "Sending..." : "Send"} */}
+            </StyledForm>
             <ContactCardMessageTitle>Connect with me</ContactCardMessageTitle>
-            <SocialButtons>
+            {/* <SocialButtons>
               {
                 ToolIcons.map((icon, index) => {
                   return (
@@ -126,8 +94,21 @@ const Contact = () => {
                   )
                 })
               }
-            </SocialButtons>
-            <StyledButton style={{width: '90%', marginLeft: '10px', marginTop: '10px', marginBottom: '10px'}}>Resume</StyledButton>
+            </SocialButtons> */}
+            <div className="iconwrapper">
+              <div className="icons">
+                <a href="https://github.com/askkew" className="icon icon--github">
+                  <i className="ri-github-line"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/luke-overbey-37b342235/" className="icon icon--linkedin">
+                  <i className="ri-linkedin-box-line"></i>
+                </a>
+                <a onClick={() => window.open('mailto:lucasaoverbey@gmail.com')} className="icon icon--email">
+                  <i className="ri-mail-line"></i>
+                </a>
+              </div>
+            </div>
+            <StyledButton style={{width: '50%', paddingLeft: '25px', marginTop: '10px', marginBottom: '10px'}}>Resume</StyledButton>
           </ContactCard>
         </ContactContainer>
       </ContactDiv>

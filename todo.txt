@@ -10,3 +10,13 @@ fix the stars
 do more styling to about page
 resume button
 resume page with pdf viewer
+
+////////////////////////////////////////////////////////////////
+
+emailjs functionality
+contact page threejs
+fix moon on front screen
+turn burger menu into x
+project card animation
+about page work
+
