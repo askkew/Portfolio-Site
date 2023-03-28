@@ -18,7 +18,7 @@ export const AboutDiv = styled('div')({
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
-  height: '100vh',
+  // height: '100vh',
   width: '100%',
   '@media (max-width: 568px)': {
     flexDirection: "column",
@@ -30,6 +30,9 @@ export const ToolsetIcons = styled('div')({
   gridTemplateColumns: "repeat(6, 1fr)",
   gridGap: "10px",
   padding: "10px",
+  '@media (max-width: 768px)': {
+    gridTemplateColumns: "repeat(3, 1fr)",
+  },
 });
 
 export const DetailsBox = styled('div')({
@@ -104,17 +107,18 @@ export const DetailCard = styled('div')({
   justifyContent: 'top',
   alignItems: 'center',
   backgroundColor: 'rgb(16,12,40)',
-  // backgroundColor: '#885f7f',
   boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
   padding: '10px',
   margin: '7px',
   borderRadius: '15px',
   width: '330px',
   height: '250px',
+  '@media (max-width: 1068px)': {
+    width: '250px',
+  },
   '@media (max-width: 368px)': {
     width: '200px',
   },
-  cursor: 'pointer',
 });
 
 export const CardContainer = styled('div')({

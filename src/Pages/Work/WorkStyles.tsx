@@ -199,7 +199,7 @@ export const LinkButtonsContainer = styled('div')({
   display: 'flex',
   flexDirection: 'row',
   position: 'absolute',
-  zIndex: 100,
+  zIndex: 90,
   top: '1%',
   // bottom: '1%',
 })
@@ -212,11 +212,15 @@ export const ProjectImage = styled('img')({
 });
 
 export const LinkGithub = styled('a')({
-  // position: 'absolute',
-  // left: '100%',
+  backdropFilter: 'blur(2px)',
+  marginTop: '10px',
 });
 
 export const LinkLink = styled('a')({
-  // position: 'absolute',
-  // right: '50%',
+  backdropFilter: 'blur(2px)',
+  marginLeft: '150px',
+  marginTop: '10px',
+  '@media (max-width: 368px)': {
+    marginLeft: '90px',
+  },
 });

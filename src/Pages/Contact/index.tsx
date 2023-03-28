@@ -1,7 +1,9 @@
-import { ContactCard, SocialButtons, ContactDiv, ContactCardMessageTitle, CustomTextField, CustomTextFieldMessage, ContactContainer, StyledForm } from "./ContactStyles";
+import { ContactCard, SocialButtons, ContactDiv, ContactCardMessageTitle, CustomTextField, CustomTextFieldMessage, ContactContainer, StyledForm, SendStyledButton, SendStyledButtonIcon } from "./ContactStyles";
 import { StyledButton } from "../../utils/Button";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { RiSendPlaneFill } from "react-icons/ri";
+import { IoDocumentTextOutline } from "react-icons/io5";
 import './contactindex.css';
 
 const Contact = () => {
@@ -80,7 +82,8 @@ const Contact = () => {
                 rows={10}
                 onChange={handleChange}
               />
-              <StyledButton style={{width: '50%', paddingLeft: '25px', marginLeft: '10px', marginTop: '10px'}}>Send</StyledButton>
+              <SendStyledButton>Send</SendStyledButton>
+              <SendStyledButtonIcon><RiSendPlaneFill /></SendStyledButtonIcon>
               {/* {loading ? "Sending..." : "Send"} */}
             </StyledForm>
             <ContactCardMessageTitle>Connect with me</ContactCardMessageTitle>
@@ -97,7 +100,8 @@ const Contact = () => {
                 </a>
               </div>
             </div>
-            <StyledButton style={{width: '50%', paddingLeft: '25px', marginTop: '10px', marginBottom: '10px'}}>Resume</StyledButton>
+            <SendStyledButton>Resume</SendStyledButton>
+            <SendStyledButtonIcon><IoDocumentTextOutline /></SendStyledButtonIcon>
           </ContactCard>
         </ContactContainer>
       </ContactDiv>

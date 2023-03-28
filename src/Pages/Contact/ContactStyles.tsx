@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 import { RowDiv } from "../../utils/content";
 import { primary, secondary, tertiary } from "../../utils/content";
 import { IconButton, Button, Link, Typography, Card, InputBase } from "@mui/material";
+import { StyledButton } from "../../utils/Button";
 
 export const ContactDiv = styled("div")({
   display: "flex",
@@ -85,4 +86,25 @@ export const StyledForm = styled('form')({
   justifyContent: "center",
   alignItems: "center",
   width: "90%",
+})
+
+export const SendStyledButton = styled(StyledButton)({
+  width: '50%',
+  paddingLeft: '25px',
+  marginTop: '10px',
+  marginBottom: '10px',
+  '@media (max-width: 268px)': {
+    display: 'none',
+  },
+})
+
+export const SendStyledButtonIcon = styled(StyledButton)({
+  display: 'none',
+  width: '50%',
+  paddingLeft: '25px',
+  marginTop: '10px',
+  marginBottom: '10px',
+  '@media (max-width: 268px)': {
+    display: 'flex',
+  },
 })
