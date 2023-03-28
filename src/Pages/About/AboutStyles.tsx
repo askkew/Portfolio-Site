@@ -15,7 +15,7 @@ import { Box, Card, Typography } from "@mui/material";
 
 export const AboutDiv = styled('div')({
   display: "flex",
-  flexDirection: "row",
+  flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
   height: '100vh',
@@ -27,7 +27,7 @@ export const AboutDiv = styled('div')({
 
 export const ToolsetIcons = styled('div')({
   display: "grid",
-  gridTemplateColumns: "repeat(4, 1fr)",
+  gridTemplateColumns: "repeat(6, 1fr)",
   gridGap: "10px",
   padding: "10px",
 });
@@ -41,11 +41,11 @@ export const DetailsBox = styled('div')({
   width: "30%",
 })
 
-export const DetailTitle = styled('h1')({
+export const AboutTitle = styled('h1')({
   display: "flex",
   flexDirection: "row",
   fontSize: "2rem",
-  fontWeight: "200",
+  fontWeight: "1000",
   textShadow: "0px 0px 10px #000000",
   color: "#e6f1ff",
   margin: "0",
@@ -67,11 +67,11 @@ export const DetailSubTitle = styled('h1')({
   },
 });
 
-export const DetailDescription = styled('h1')({
+export const AboutDescription = styled('h1')({
   display: "flex",
   flexDirection: "row",
-  fontSize: "1rem",
-  fontWeight: "200",
+  fontSize: "1.2rem",
+  fontWeight: "300",
   textShadow: "0px 0px 10px #000000",
   color: "#e6f1ff",
   margin: "0",
@@ -95,6 +95,79 @@ export const BallContainer = styled('div')({
     width: "30px",
     height: "30px",
   },
+});
+
+export const DetailCard = styled('div')({
+  position: 'relative',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'top',
+  alignItems: 'center',
+  backgroundColor: 'rgb(16,12,40)',
+  // backgroundColor: '#885f7f',
+  boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+  padding: '10px',
+  margin: '7px',
+  borderRadius: '15px',
+  width: '330px',
+  height: '250px',
+  '@media (max-width: 368px)': {
+    width: '200px',
+  },
+  cursor: 'pointer',
+});
+
+export const CardContainer = styled('div')({
+  display: 'flex',
+  flexDirection: 'row',
+  justifyContent: 'center',
+  alignItems: 'center',
+  '@media (max-width: 768px)': {
+    flexDirection: 'column',
+  },
+});
+
+export const CardWrapper = styled('div')({
+  position: 'relative',
+})
+
+export const MouseTracker = styled('div')({
+  position: 'absolute',
+  width: 'calc(100% / 3)',
+  height: 'calc(100% / 3)',
+  zIndex: 2,
+})
+
+export const DetailTitle = styled('h1')({
+  display: "flex",
+  flexDirection: "row",
+  textAlign: "center",
+  fontSize: "1.6rem",
+  fontWeight: "700",
+  textShadow: "0px 0px 10px #000000",
+  color: "#e6f1ff",
+  margin: "0",
+  '@media (max-width: 768px)': {
+    fontSize: "1.6rem",
+  },
+});
+
+export const DetailDescription = styled('h1')({
+  display: "flex",
+  flexDirection: "row",
+  textAlign: "center",
+  fontSize: "1rem",
+  fontWeight: "200",
+  textShadow: "0px 0px 10px #000000",
+  color: "#e6f1ff",
+  margin: "0",
+  '@media (max-width: 768px)': {
+    fontSize: "0.7rem",
+  },
+});
+
+export const IconContainer = styled('div')({
+  paddingTop: "20px",
 });
 
 //==================================================================================================

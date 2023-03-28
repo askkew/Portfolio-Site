@@ -39,6 +39,11 @@ export const ProjectCard = styled('div')({
   '@media (max-width: 368px)': {
     width: '200px',
   },
+  top: 0,
+  transition: 'top ease 0.5s',
+  '&:hover': {
+    top: '-10px',
+  },
 });
 
 export const ProjectTitleTypograph = styled('h1')({

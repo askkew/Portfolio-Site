@@ -10,8 +10,30 @@ import mongodb from "./language/mongodb.png";
 import php from "./language/php.png";
 import sql from "./language/sql.png";
 import bootstrap from "./language/bootstrap.png";
+import { HiOutlineDesktopComputer } from "react-icons/hi";
+import { GrReactjs } from "react-icons/gr";
+import { AiTwotoneBuild } from "react-icons/ai";
+import styled from "@emotion/styled";
 
-export const technologies = [
+const StyledWebIcon = styled(HiOutlineDesktopComputer)({
+  fontSize: "2.5rem",
+  color: "#fff",
+  margin: "0 0.5rem",
+});
+
+const StyledReactIcon = styled(GrReactjs)({
+  fontSize: "2.5rem",
+  color: "#fff",
+  margin: "0 0.5rem",
+});
+
+const StyledBuildIcon = styled(AiTwotoneBuild)({
+  fontSize: "2.5rem",
+  color: "#fff",
+  margin: "0 0.5rem",
+});
+
+const technologies = [
   {
     name: "HTML 5",
     icon: html,
@@ -62,7 +84,7 @@ export const technologies = [
   },
 ];
 
-export const projectData = [
+const projectData = [
   {
     title: "MedPLUS",
     description: "MedPLUS specializes in providing innovative and comprehensive medical professional liability insurance products through financially secure, A.M. Best Rated insurance carriers.",
@@ -79,14 +101,14 @@ export const projectData = [
   },
   {
     title: "Job Tracker",
-    description: "This is a basic MERN stack application that allows users to track their job applications.",
+    description: "This is a basic MERN stack application that allows users to track their job applications. Using a mongoDB backend to store job applications",
     githublink: "https://github.com/askkew/Job-Tracker",
     link: "https://github.com/askkew/Job-Tracker",
     image: "jobtracker.png",
   },
   {
     title: "Techlite",
-    description: "Techlite is an E-commerce website built on the LAMP stack and designed by a team of students as a term project. It included an entire admin back end for managing orders, users, contact tickets, and products.",
+    description: "Techlite is an E-commerce website built on the LAMP stack and designed by a team of students as a term project.",
     githublink: "https://github.com/Scrub-Sauce/Scared2Compile",
     link: "https://github.com/Scrub-Sauce/Scared2Compile",
     image: "techliteprimary.png",
@@ -98,4 +120,31 @@ export const projectData = [
     link: "https://github.com/askkew/WeatherApp",
     image: "weatherapp.png",
   },
+  {
+    title: "Job Tracker",
+    description: "This is a basic MERN stack application that allows users to track their job applications. Using a mongoDB backend to store job applications",
+    githublink: "https://github.com/askkew/Job-Tracker",
+    link: "https://github.com/askkew/Job-Tracker",
+    image: "jobtracker.png",
+  },
 ]
+
+const aboutDetails = [
+  {
+    title: "Web Development",
+    description: "I combine technology with artistry, creating visually stunning websites with code, design, and UX skills.",
+    icon: <StyledWebIcon />,
+  },
+  {
+    title: "Full Stack Development",
+    description: "I love creating dynamic web apps that engage users and solve complex problems. I'm always adopting new tools and languages to improve my workflow.",
+    icon: <StyledReactIcon />,
+  },
+  {
+    title: "Creative design",
+    description: "I am constantly exploring new ideas and experimenting with different approaches to coding, pushing the boundaries of what is possible.",
+    icon: <StyledBuildIcon />,
+  },
+]
+
+export { projectData, technologies, aboutDetails}
