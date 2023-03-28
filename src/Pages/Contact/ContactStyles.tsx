@@ -51,6 +51,9 @@ export const ContactCardMessageTitle = styled('h1')({
   '@media (max-width: 768px)': {
     fontSize: "1.8rem",
   },
+  '@media (max-width: 268px)': {
+    fontSize: "1.3rem",
+  },
 });
 
 export const SocialButtons = styled(RowDiv)({
@@ -106,5 +109,18 @@ export const SendStyledButtonIcon = styled(StyledButton)({
   marginBottom: '10px',
   '@media (max-width: 268px)': {
     display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingLeft: '13px',
+  },
+})
+
+export const IconWrapper = styled('div')({
+  display: 'grid',
+  gridTemplateColumns: 'repeat(3, 1fr)',
+  gap: '20px',
+  '@media (max-width: 268px)': {
+    gridTemplateColumns: 'repeat(1, 1fr)',
+    gap: '10px',
   },
 })

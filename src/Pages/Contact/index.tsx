@@ -1,4 +1,4 @@
-import { ContactCard, SocialButtons, ContactDiv, ContactCardMessageTitle, CustomTextField, CustomTextFieldMessage, ContactContainer, StyledForm, SendStyledButton, SendStyledButtonIcon } from "./ContactStyles";
+import { ContactCard, SocialButtons, ContactDiv, ContactCardMessageTitle, CustomTextField, CustomTextFieldMessage, ContactContainer, StyledForm, SendStyledButton, SendStyledButtonIcon, IconWrapper } from "./ContactStyles";
 import { StyledButton } from "../../utils/Button";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
@@ -88,7 +88,7 @@ const Contact = () => {
             </StyledForm>
             <ContactCardMessageTitle>Connect with me</ContactCardMessageTitle>
             <div className="iconwrapper">
-              <div className="icons">
+              <IconWrapper className="icons">
                 <a href="https://github.com/askkew" className="icon icon--github">
                   <i className="ri-github-line"></i>
                 </a>
@@ -98,7 +98,7 @@ const Contact = () => {
                 <a onClick={() => window.open('mailto:lucasaoverbey@gmail.com')} className="icon icon--email">
                   <i className="ri-mail-line"></i>
                 </a>
-              </div>
+              </IconWrapper>
             </div>
             <SendStyledButton>Resume</SendStyledButton>
             <SendStyledButtonIcon><IoDocumentTextOutline /></SendStyledButtonIcon>
