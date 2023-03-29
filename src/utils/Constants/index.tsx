@@ -15,6 +15,11 @@ import { GrReactjs } from "react-icons/gr";
 import { AiTwotoneBuild } from "react-icons/ai";
 import styled from "@emotion/styled";
 
+const firstTag = 'rgb(78,87,116)';
+const secondTag = 'rgb(48,68,82)';
+const thirdTag = 'rgb(108,55,90)';
+const fourthTag = 'rgb(78, 116, 87)';
+
 const StyledWebIcon = styled(HiOutlineDesktopComputer)({
   fontSize: "2.5rem",
   color: "#fff",
@@ -91,6 +96,20 @@ const projectData = [
     githublink: "https://github.com/snyperifle/medPlus",
     link: "https://github.com/snyperifle/medPlus",
     image: "medplusprimary.png",
+    tags: [
+      {
+        name: "react",
+        color: firstTag,
+      },
+      {
+        name: "typescript",
+        color: secondTag,
+      },
+      {
+        name: "nodejs",
+        color: thirdTag,
+      },
+    ],
   },
   {
     title: "TDSC",
@@ -98,6 +117,20 @@ const projectData = [
     githublink: "https://github.com/snyperifle/TDSC",
     link: "https://github.com/snyperifle/TDSC",
     image: "TDSCprimary.png",
+    tags: [
+      {
+        name: "react",
+        color: firstTag,
+      },
+      {
+        name: "typescript",
+        color: secondTag,
+      },
+      {
+        name: "nodejs",
+        color: thirdTag,
+      },
+    ],
   },
   {
     title: "Job Tracker",
@@ -105,6 +138,24 @@ const projectData = [
     githublink: "https://github.com/askkew/Job-Tracker",
     link: "https://github.com/askkew/Job-Tracker",
     image: "jobtracker.png",
+    tags: [
+      {
+        name: "react",
+        color: firstTag,
+      },
+      {
+        name: "typescript",
+        color: secondTag,
+      },
+      {
+        name: "nodejs",
+        color: thirdTag,
+      },
+      {
+        name: "mongodb",
+        color: fourthTag,
+      },
+    ],
   },
   {
     title: "Techlite",
@@ -112,6 +163,24 @@ const projectData = [
     githublink: "https://github.com/Scrub-Sauce/Scared2Compile",
     link: "https://github.com/Scrub-Sauce/Scared2Compile",
     image: "techliteprimary.png",
+    tags: [
+      {
+        name: "javascript",
+        color: firstTag,
+      },
+      {
+        name: "css",
+        color: secondTag,
+      },
+      {
+        name: "html",
+        color: thirdTag,
+      },
+      {
+        name: "mysql",
+        color: fourthTag,
+      },
+    ],
   },
   {
     title: "Weather app",
@@ -119,6 +188,24 @@ const projectData = [
     githublink: "https://github.com/askkew/WeatherApp",
     link: "https://github.com/askkew/WeatherApp",
     image: "weatherapp.png",
+    tags: [
+      {
+        name: "react",
+        color: firstTag,
+      },
+      {
+        name: "typescript",
+        color: secondTag,
+      },
+      {
+        name: "nodejs",
+        color: thirdTag,
+      },
+      {
+        name: "mongodb",
+        color: fourthTag,
+      },
+    ],
   },
   {
     title: "Job Tracker",
@@ -126,6 +213,24 @@ const projectData = [
     githublink: "https://github.com/askkew/Job-Tracker",
     link: "https://github.com/askkew/Job-Tracker",
     image: "jobtracker.png",
+    tags: [
+      {
+        name: "react",
+        color: firstTag,
+      },
+      {
+        name: "typescript",
+        color: secondTag,
+      },
+      {
+        name: "nodejs",
+        color: thirdTag,
+      },
+      {
+        name: "mongodb",
+        color: fourthTag,
+      },
+    ],
   },
 ]
 

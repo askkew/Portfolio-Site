@@ -14,12 +14,8 @@ import { ProjectDiv,
   LinkButtonsContainer,
   ProjectImage, 
   LinkGithub,
-  LinkLink} from "./WorkStyles";
-import { Link } from "@mui/material";
-import { fadeIn, RowDiv } from "../../utils/content";
-import { AiFillGithub } from "react-icons/ai";
-import { BiLinkExternal } from "react-icons/bi";
-import { motion } from "framer-motion";
+  LinkLink,
+  TagP} from "./WorkStyles";
 import { projectData } from "../../utils/Constants";
 import './work.css';
 
@@ -46,9 +42,14 @@ const Projects = () => {
               <ProjectTitleTypograph>{project.title}</ProjectTitleTypograph>
               <ProjectDescription>{project.description}</ProjectDescription>
               <TagsDiv>
-                <ProjectTagOne>#react</ProjectTagOne>
-                <ProjectTagTwo>#typescript</ProjectTagTwo>
-                <ProjectTagThree>#node</ProjectTagThree>
+                {project.tags.map((tag) => (
+                <TagP
+                  key={`${project.title}-${tag.name}`}
+                  style={{ color: `${tag.color}` }}
+                >
+                  #{tag.name}
+                </TagP>
+                ))}
               </TagsDiv>
             </ProjectCard>
           ))}

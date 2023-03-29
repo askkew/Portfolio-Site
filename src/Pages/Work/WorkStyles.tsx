@@ -145,18 +145,26 @@ export const ProjectTagThree = styled('h1')({
 export const ProjectTagFour = styled('h1')({
   fontSize: "1rem",
   fontWeight: "200",
-  // textShadow: "0px 0px 10px #000000",
   color: "rgb(108,55,90)",
   margin: "0",
   padding: "0",
 });
 
 export const TagsDiv = styled('div')({
-  display: 'flex',
-  flexDirection: 'row',
+  display: 'grid',
+  gridTemplateColumns: 'repeat(3, 1fr)',
   justifyContent: 'center',
   alignItems: 'center',
-  gap: '10px',
+  '& > *:nth-child(4)': {
+    gridColumnStart: '2',
+    gridColumnEnd: '2',
+    gridRowStart: '2',
+    gridRowEnd: '2',
+  },
+});
+
+export const TagP = styled('p')({
+  textAlign: 'center',
 });
 
 export const GithubIconButton = styled(IconButton)({
