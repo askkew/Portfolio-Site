@@ -19,6 +19,7 @@
   -khtml-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+  transform: translateZ(0);
 	outline: 2px solid #fff;
 	transition-property: outline-offset, outline-color, background-color;
 	transition-duration: 0.25s;
