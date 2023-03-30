@@ -137,7 +137,7 @@ const projectData = [
     description: "This is a basic MERN stack application that allows users to track their job applications. Using a mongoDB backend to store job applications",
     githublink: "https://github.com/askkew/Job-Tracker",
     link: "https://github.com/askkew/Job-Tracker",
-    image: "jobtracker.png",
+    image: "jobtrackersecondary.png",
     tags: [
       {
         name: "react",
@@ -212,7 +212,7 @@ const projectData = [
     description: "This is my portfolio site that is built around ReactJS and Typescript, using many libraries such as ThreeJS and Framer Motion",
     githublink: "https://github.com/askkew/Portfolio-Site",
     link: "https://lucasoverbey.dev",
-    image: "jobtracker.png",
+    image: "portfoliositeprimary.png",
     tags: [
       {
         name: "react",
