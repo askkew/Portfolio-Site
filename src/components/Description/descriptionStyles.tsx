@@ -6,7 +6,7 @@ export const Wrapper = styled('div')({
   height: '40px',
   display: 'flex',
   flexDirection: 'row',
-  '@media (max-width: 768px)': {
+  '@media (max-width: 368px)': {
     flexDirection: 'column',
     height: '45px',
   },
@@ -27,14 +27,14 @@ export const ItemSpan = styled('div')({
 export const Label1 = styled('p')({
   color: 'white',
   fontSize: '35px',
-  '@media (max-width: 768px)': {
+  '@media (max-width: 368px)': {
     fontSize: '20px',
   },
 });
 
 export const Container1 = styled('div')({
   fontSize: '35px',
-  '@media (max-width: 768px)': {
+  '@media (max-width: 368px)': {
     fontSize: '20px',
   },
 });

@@ -1,6 +1,6 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { styled } from "@mui/system";
-import { Left, Right, NameTypograph, SubtitleTypograph, HomeDiv, StyledCanvas, RightRight } from "./HomeStyles";
+import { Left, Right, NameTypograph, SubtitleTypograph, HomeDiv, StyledCanvas, RightRight, ResumeStyledButton, ResumeStyledButtonIcon } from "./HomeStyles";
 import { StyledButton } from "../../utils/Button";
 import ComputersCanvas from "../../components/canvas";
 import { Canvas } from "@react-three/fiber";
@@ -26,8 +26,8 @@ const Home = () => {
           {/* <NameTypograph>Hi, I'm <span style={{color: 'hsl(218, 89%, 79%)'}}>Lucas</span></NameTypograph> */}
           <NameTypograph>Hi, I'm <span style={{color: 'hsl(250, 89%, 79%)'}}>Lucas</span></NameTypograph>
           <Description />
-          <SendStyledButton type="button" onClick={() => (modalOpen ? close() : open())} >Hire now!</SendStyledButton>
-          <SendStyledButtonIcon type="button" onClick={() => (modalOpen ? close() : open())} ><IoDocumentTextOutline /></SendStyledButtonIcon>
+          <ResumeStyledButton type="button" onClick={() => (modalOpen ? close() : open())} >Resume</ResumeStyledButton>
+          <ResumeStyledButtonIcon type="button" onClick={() => (modalOpen ? close() : open())} ><IoDocumentTextOutline /></ResumeStyledButtonIcon>
         </Left>
         <Right>
           <StyledCanvas

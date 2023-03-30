@@ -2,6 +2,7 @@ import React from "react";
 import { styled } from "@mui/system";
 import { Box, Typography } from "@mui/material";
 import { Canvas } from "@react-three/fiber";
+import { StyledButton } from "../../utils/Button";
 
 export const HomeDiv = styled('div')({
   display: "flex",
@@ -59,7 +60,7 @@ export const NameTypograph = styled('h1')({
   color: "#e6f1ff",
   margin: "0",
   padding: "0",
-  '@media (max-width: 768px)': {
+  '@media (max-width: 368px)': {
     fontSize: "1.6rem",
   },
 });
@@ -84,5 +85,22 @@ export const StyledCanvas = styled(Canvas)({
   minWidth: "50%",
   '@media (max-width: 768px)': {
     // display: "none",
+  },
+});
+
+export const ResumeStyledButton = styled(StyledButton)({
+  marginTop: "5px",
+  width: "180px",
+  '@media (max-width: 268px)': {
+    display: 'none',
+  },
+});
+
+export const ResumeStyledButtonIcon = styled(StyledButton)({
+  marginTop: "5px",
+  width: "50px",
+  display: 'none',
+  '@media (max-width: 268px)': {
+    display: 'flex',
   },
 });

@@ -73,11 +73,12 @@ export const DetailSubTitle = styled('h1')({
 export const AboutDescription = styled('h1')({
   display: "flex",
   flexDirection: "row",
+  textAlign: "center",
   fontSize: "1.2rem",
   fontWeight: "300",
   textShadow: "0px 0px 10px #000000",
   color: "#e6f1ff",
-  margin: "0",
+  marginBottom: "10px",
   '@media (max-width: 768px)': {
     fontSize: "0.7rem",
   },
