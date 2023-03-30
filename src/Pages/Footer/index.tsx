@@ -7,20 +7,6 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 
 const Footer = () => {
-  // const componentRef = useRef(null);
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  //     const componentOffsetTop = componentRef.current.offsetTop;
-  //     if (scrollTop > componentOffsetTop) {
-  //       window.scrollTo(0, componentOffsetTop);
-  //     }
-  //   };
-
-  //   window.addEventListener('scroll', handleScroll);
-  //   return () => window.removeEventListener('scroll', handleScroll);
-  // }, []);
 
   return (
     <StyledFooter>
@@ -28,16 +14,16 @@ const Footer = () => {
       <SocialButtons>
         <IconButton color="primary" component="label">
           <Link href="https://github.com/askkew" target="_blank" >
-            <GitHubIcon style={{transform: 'scale(0.9)', margin: "0 5 0 5", color: 'hsl(213, 89%, 79%)'}}/>
+            <GitHubIcon style={{transform: 'scale(0.9)', margin: "0 5 0 5", color: 'hsl(250, 89%, 79%)'}}/>
           </Link>
         </IconButton>
         <IconButton color="primary" component="label">
           <Link href="https://www.linkedin.com/in/luke-overbey-37b342235/" target="_blank" >
-            <LinkedInIcon style={{transform: 'scale(0.9)', margin: "0 5 0 5", color: 'hsl(213, 89%, 79%)'}}/>
+            <LinkedInIcon style={{transform: 'scale(0.9)', margin: "0 5 0 5", color: 'hsl(250, 89%, 79%)'}}/>
           </Link>
         </IconButton>
         <IconButton color="primary" component="label" onClick={() => window.open('mailto:lucasaoverbey@gmail.com')}>
-          <EmailIcon style={{transform: 'scale(0.9)', margin: "0 5 0 5", color: 'hsl(213, 89%, 79%)'}}/>
+          <EmailIcon style={{transform: 'scale(0.9)', margin: "0 5 0 5", color: 'hsl(250, 89%, 79%)'}}/>
         </IconButton>
       </SocialButtons>
     </StyledFooter>

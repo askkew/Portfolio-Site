@@ -208,10 +208,10 @@ const projectData = [
     ],
   },
   {
-    title: "Job Tracker",
-    description: "This is a basic MERN stack application that allows users to track their job applications. Using a mongoDB backend to store job applications",
-    githublink: "https://github.com/askkew/Job-Tracker",
-    link: "https://github.com/askkew/Job-Tracker",
+    title: "Portfolio Site",
+    description: "This is my portfolio site that is built around ReactJS and Typescript, using many libraries such as ThreeJS and Framer Motion",
+    githublink: "https://github.com/askkew/Portfolio-Site",
+    link: "https://lucasoverbey.dev",
     image: "jobtracker.png",
     tags: [
       {
@@ -223,11 +223,11 @@ const projectData = [
         color: secondTag,
       },
       {
-        name: "nodejs",
+        name: "threejs",
         color: thirdTag,
       },
       {
-        name: "mongodb",
+        name: "framermotion",
         color: fourthTag,
       },
     ],
