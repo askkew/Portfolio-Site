@@ -26,20 +26,20 @@ export const ContactContainer = styled("div")({
 
 export const ContactCard = styled('form')({
   display: "flex",
+  width: 'clamp(50%, 700px, 50%)',
+  maxWidth: "700px",
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
-  // backgroundColor: 'transparent' ,
   paddingTop: '10px',
   backgroundColor: 'rgb(16,12,40)',
   borderRadius: '15px',
   border: 'none',
   boxShadow: 'none',
   gap: '15px',
-  width: "500px",
   paddingBottom: '10px',
-  '@media (max-width: 768px)': {
-    width: "90%",
+  '@media (max-width: 568px)': {
+    width: "100%",
   },
 });
 
@@ -70,17 +70,21 @@ export const SocialButtons = styled(RowDiv)({
 
 export const CustomTextField = styled(InputBase)({
   width: '90%',
+  maxWidth: '550px',
   height: '50px',
   margin: '10px',
   padding: '10px',
-  color: 'rgb(44,47,52)',
+  color: 'gainsboro',
+  fontWeight: 'bold',
+  fontSize: '15px',
   borderRadius: '10px',
-  backgroundColor: 'gainsboro',
+  backgroundColor: 'rgb(5,8,22)',
   boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px inset',
 });
 
 export const CustomTextFieldMessage = styled(CustomTextField)({
   height: '120px',
+  maxWidth: '550px',
 });
 
 export const StyledForm = styled('form')({
@@ -123,4 +127,5 @@ export const IconWrapper = styled('div')({
     gridTemplateColumns: 'repeat(1, 1fr)',
     gap: '10px',
   },
+  marginBottom: '10px',
 })
