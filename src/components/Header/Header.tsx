@@ -34,7 +34,11 @@ const Header = () => {
     const scrollToId = `${content.toLowerCase()}`;
 
     const handleClickNav = () => {
-      document.getElementById(scrollToId)?.scrollIntoView({ behavior: "smooth" });
+      if (window.innerWidth > 768) {
+        document.getElementById(scrollToId)?.scrollIntoView({ behavior: "smooth" });
+      } else {
+        document.getElementById(scrollToId)?.scrollIntoView(true);
+      }
     }
 
     return (
