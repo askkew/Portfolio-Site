@@ -1,4 +1,4 @@
-import { ContactCard, ContactCardMessageTitle, CustomTextField, CustomTextFieldMessage, StyledForm, SendStyledButton, SendStyledButtonIcon, IconWrapper } from "./ContactStyles";
+import { ContactCard, ContactCardMessageTitle, CustomTextField, CustomTextFieldMessage, StyledForm, SendStyledButton, SendStyledButtonIcon, IconWrapper, ContactCardSocialTitle } from "./ContactStyles";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { RiSendPlaneFill } from "react-icons/ri";
@@ -52,7 +52,7 @@ const Contact = () => {
           <SendStyledButton type="submit" onClick={sendEmail}>Send</SendStyledButton>
           <SendStyledButtonIcon type="button" onClick={sendEmail}><RiSendPlaneFill /></SendStyledButtonIcon>
         </StyledForm>
-        <ContactCardMessageTitle>Connect with me</ContactCardMessageTitle>
+        <ContactCardSocialTitle>Connect with me</ContactCardSocialTitle>
         <div className="iconwrapper">
           <IconWrapper className="icons">
             <a href="https://github.com/askkew" className="icon icon--github">

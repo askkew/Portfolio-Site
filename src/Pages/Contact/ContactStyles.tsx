@@ -52,6 +52,19 @@ export const ContactCardMessageTitle = styled('h1')({
   },
 });
 
+export const ContactCardSocialTitle = styled('h1')({
+  fontSize: "2.2rem",
+  marginBottom: "5px",
+  fontWeight: "200",
+  color: "white",
+  '@media (max-width: 768px)': {
+    fontSize: "1.5rem",
+  },
+  '@media (max-width: 268px)': {
+    fontSize: "1rem",
+  },
+});
+
 export const SocialButtons = styled(RowDiv)({
   display: "flex",
   flexDirection: "row",
@@ -96,7 +109,7 @@ export const SendStyledButton = styled(StyledButton)({
   paddingLeft: '25px',
   marginTop: '10px',
   marginBottom: '10px',
-  '@media (max-width: 268px)': {
+  '@media (max-width: 668px)': {
     display: 'none',
   },
 })
@@ -107,7 +120,7 @@ export const SendStyledButtonIcon = styled(StyledButton)({
   paddingLeft: '25px',
   marginTop: '10px',
   marginBottom: '10px',
-  '@media (max-width: 268px)': {
+  '@media (max-width: 668px)': {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -119,9 +132,8 @@ export const IconWrapper = styled('div')({
   display: 'grid',
   gridTemplateColumns: 'repeat(3, 1fr)',
   gap: '20px',
-  '@media (max-width: 268px)': {
+  '@media (max-width: 768px)': {
     gridTemplateColumns: 'repeat(1, 1fr)',
     gap: '10px',
   },
-  marginBottom: '10px',
 })
