@@ -1,20 +1,21 @@
 import React from 'react'
 import './descriptionindex.css'
+import { Container1, ItemSpan, Label1, Words, Wrapper } from './descriptionStyles'
 
 const Description = () => {
   return (
-    <div className="container1">
-      <div className="wrapper">
-        <p className="label1">I'm a </p>
-        <div className="words">
-          <span className="itemspan">Designer</span>
-          <span className="itemspan">Developer</span>
-          <span className="itemspan">Creator</span>
-          <span className="itemspan">Team player</span>
-          <span className="itemspan">Designer</span>
-        </div>
-      </div>
-    </div>
+    <Container1 className="container1">
+      <Wrapper className="wrapper">
+        <Label1>I'm a </Label1>
+        <Words className="words">
+          <ItemSpan className="itemspan">Designer</ItemSpan>
+          <ItemSpan className="itemspan">Developer</ItemSpan>
+          <ItemSpan className="itemspan">Creator</ItemSpan>
+          <ItemSpan className="itemspan">Team player</ItemSpan>
+          <ItemSpan className="itemspan">Designer</ItemSpan>
+        </Words>
+      </Wrapper>
+    </Container1>
   )
 }
 

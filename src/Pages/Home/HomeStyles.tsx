@@ -24,10 +24,10 @@ export const HomeDiv = styled('div')({
 export const Left = styled('div')({
   display: "flex",
   flexDirection: "column",
-  justifyContent: "center",
+  justifyContent: "left",
   height: "100%",
   width: "100%",
-  alignItems: "center",
+  alignItems: "left",
 });
 
 export const Right = styled('div')({

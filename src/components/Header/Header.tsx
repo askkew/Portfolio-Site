@@ -1,6 +1,7 @@
 import { Button } from "@mui/material";
 import React, { Component } from "react";
 import { useState } from "react";
+import { SendStyledButton } from "../../Pages/Contact/ContactStyles";
 import { StyledButton } from "../../utils/Button";
 import { StyledDrawer, HeaderBox, Container, NavContainer, MobileNavArea, DesktopNavArea, NavArea, StyledIconButton, StyledMenuIcon } from "./HeaderStyles";
 
