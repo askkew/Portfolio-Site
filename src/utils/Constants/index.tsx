@@ -95,7 +95,7 @@ const projectData = [
     description: "MedPLUS specializes in providing innovative and comprehensive medical professional liability insurance products through financially secure, A.M. Best Rated insurance carriers.",
     githublink: "https://github.com/snyperifle/medPlus",
     link: "https://github.com/snyperifle/medPlus",
-    image: "medplusprimary.png",
+    image: "/workimages/medplusprimary.png",
     tags: [
       {
         name: "react",
@@ -116,7 +116,7 @@ const projectData = [
     description: "TDSC is a shooting club operated out of Houston Texas that brings together gun enthusiasts for self defense classes and range days.",
     githublink: "https://github.com/snyperifle/TDSC",
     link: "https://github.com/snyperifle/TDSC",
-    image: "TDSCprimary.png",
+    image: "/workimages/TDSCprimary.png",
     tags: [
       {
         name: "react",
@@ -137,7 +137,7 @@ const projectData = [
     description: "This is a basic MERN stack application that allows users to track their job applications. Using a mongoDB backend to store job applications",
     githublink: "https://github.com/askkew/Job-Tracker",
     link: "https://github.com/askkew/Job-Tracker",
-    image: "jobtrackersecondary.png",
+    image: "/workimages/jobtrackersecondary.png",
     tags: [
       {
         name: "react",
@@ -162,7 +162,7 @@ const projectData = [
     description: "Techlite is an E-commerce website built on the LAMP stack and designed by a team of students as a term project.",
     githublink: "https://github.com/Scrub-Sauce/Scared2Compile",
     link: "https://github.com/Scrub-Sauce/Scared2Compile",
-    image: "techliteprimary.png",
+    image: "/workimages/techliteprimary.png",
     tags: [
       {
         name: "javascript",
@@ -187,7 +187,7 @@ const projectData = [
     description: "This is a basic MERN stack application that allows users to get the current weather details as well as the following 6 day forecast for any city.",
     githublink: "https://github.com/askkew/WeatherApp",
     link: "https://github.com/askkew/WeatherApp",
-    image: "weatherapp.png",
+    image: "/workimages/weatherapp.png",
     tags: [
       {
         name: "react",
@@ -212,7 +212,7 @@ const projectData = [
     description: "This is my portfolio site that is built around ReactJS and Typescript, using many libraries such as ThreeJS and Framer Motion",
     githublink: "https://github.com/askkew/Portfolio-Site",
     link: "https://lucasoverbey.dev",
-    image: "portfoliositeprimary.png",
+    image: "/workimages/portfoliositeprimary.png",
     tags: [
       {
         name: "react",
