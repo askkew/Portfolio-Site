@@ -15,7 +15,10 @@
 	text-decoration: none;
 	font-size: 26px;
 	color: #fff;
-	border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
 	outline: 2px solid #fff;
 	transition-property: outline-offset, outline-color, background-color;
 	transition-duration: 0.25s;

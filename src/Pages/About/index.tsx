@@ -1,10 +1,7 @@
-import { AboutDiv, ToolsetIcons, DetailsBox, LanguageIcons, BallContainer, DetailTitle, DetailDescription, DetailSubTitle, DetailCard, CardContainer, CardWrapper, MouseTracker, AboutTitle, AboutDescription, IconContainer } from "./AboutStyles";
+import { AboutDiv, ToolsetIcons, DetailsBox, BallContainer, DetailTitle, DetailDescription, DetailSubTitle, DetailCard, CardContainer, CardWrapper, MouseTracker, AboutTitle, AboutDescription, IconContainer } from "./AboutStyles";
 import { technologies, aboutDetails } from "../../utils/Constants";
 import BallCanvas from "../../components/Ball/Ball";
 import './about.css';
-import { HiOutlineDesktopComputer } from "react-icons/hi";
-import { GrReactjs } from "react-icons/gr";
-import { AiTwotoneBuild } from "react-icons/ai";
 
 const About = () => {
 

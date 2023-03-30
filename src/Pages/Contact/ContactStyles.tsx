@@ -1,8 +1,6 @@
-import React from "react";
 import styled from "@emotion/styled";
 import { RowDiv } from "../../utils/content";
-import { primary, secondary, tertiary } from "../../utils/content";
-import { IconButton, Button, Link, Typography, Card, InputBase } from "@mui/material";
+import { InputBase } from "@mui/material";
 import { StyledButton } from "../../utils/Button";
 
 export const ContactDiv = styled("div")({
@@ -26,7 +24,7 @@ export const ContactContainer = styled("div")({
 
 export const ContactCard = styled('form')({
   display: "flex",
-  width: 'clamp(50%, 700px, 50%)',
+  width: 'clamp(40%, 700px, 50%)',
   maxWidth: "700px",
   flexDirection: "column",
   justifyContent: "center",
@@ -38,9 +36,7 @@ export const ContactCard = styled('form')({
   boxShadow: 'none',
   gap: '15px',
   paddingBottom: '10px',
-  '@media (max-width: 568px)': {
-    width: "100%",
-  },
+  minWidth: '200px',
 });
 
 export const ContactCardMessageTitle = styled('h1')({

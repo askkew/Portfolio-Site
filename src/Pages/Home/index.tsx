@@ -1,13 +1,8 @@
-import React, { Suspense, useEffect, useState } from "react";
-import { styled } from "@mui/system";
+import { useState } from "react";
+
 import { Left, Right, NameTypograph, SubtitleTypograph, HomeDiv, StyledCanvas, RightRight, ResumeStyledButton, ResumeStyledButtonIcon } from "./HomeStyles";
-import { StyledButton } from "../../utils/Button";
-import ComputersCanvas from "../../components/canvas";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
-import CanvasLoader from "../../components/Ball/Loader";
+
 import Description from "../../components/Description";
-import { SendStyledButton, SendStyledButtonIcon } from "../Contact/ContactStyles";
 import { IoDocumentTextOutline } from "react-icons/io5";
 import Modal from "../../components/Modal";
 
@@ -23,13 +18,12 @@ const Home = () => {
     <section id="home">
       <HomeDiv>
         <Left>
-          {/* <NameTypograph>Hi, I'm <span style={{color: 'hsl(218, 89%, 79%)'}}>Lucas</span></NameTypograph> */}
           <NameTypograph>Hi, I'm <span style={{color: 'hsl(250, 89%, 79%)'}}>Lucas</span></NameTypograph>
           <Description />
           <ResumeStyledButton type="button" onClick={() => (modalOpen ? close() : open())} >Resume</ResumeStyledButton>
           <ResumeStyledButtonIcon type="button" onClick={() => (modalOpen ? close() : open())} ><IoDocumentTextOutline /></ResumeStyledButtonIcon>
         </Left>
-        <Right>
+        {/* <Right>
           <StyledCanvas
           frameloop='demand'
           dpr={[1, 2]}
@@ -50,8 +44,7 @@ const Home = () => {
               </mesh>
             </Suspense>
           </StyledCanvas>
-        </Right>
-        {/* <RightRight /> */}
+        </Right> */}
       </HomeDiv>
       {/* @ts-ignore */}
       {modalOpen && <Modal modalOpen={modalOpen} handleClose={close}/>}

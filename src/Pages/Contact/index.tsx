@@ -1,12 +1,8 @@
-import { ContactCard, SocialButtons, ContactDiv, ContactCardMessageTitle, CustomTextField, CustomTextFieldMessage, ContactContainer, StyledForm, SendStyledButton, SendStyledButtonIcon, IconWrapper } from "./ContactStyles";
-import { StyledButton } from "../../utils/Button";
-import React, { useRef, useState } from "react";
+import { ContactCard, ContactCardMessageTitle, CustomTextField, CustomTextFieldMessage, StyledForm, SendStyledButton, SendStyledButtonIcon, IconWrapper } from "./ContactStyles";
+import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { RiSendPlaneFill } from "react-icons/ri";
-import { IoDocumentTextOutline } from "react-icons/io5";
 import './contactindex.css';
-import { motion } from "framer-motion";
-import Modal from "../../components/Modal";
 
 const Contact = () => {
   const service = process.env.REACT_APP_SERVICE_ID;

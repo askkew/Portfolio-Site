@@ -1,6 +1,4 @@
-import React from "react";
 import { styled } from "@mui/system";
-import { Box, Typography } from "@mui/material";
 import { Canvas } from "@react-three/fiber";
 import { StyledButton } from "../../utils/Button";
 
@@ -29,6 +27,7 @@ export const Left = styled('div')({
   height: "100%",
   width: "100%",
   alignItems: "left",
+  marginLeft: "10px",
 });
 
 export const Right = styled('div')({
