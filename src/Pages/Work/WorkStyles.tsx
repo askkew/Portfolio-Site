@@ -165,6 +165,7 @@ export const TagsDiv = styled('div')({
 
 export const TagP = styled('p')({
   textAlign: 'center',
+  fontWeight: '600',
 });
 
 export const GithubIconButton = styled(IconButton)({

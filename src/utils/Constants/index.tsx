@@ -15,10 +15,11 @@ import { GrReactjs } from "react-icons/gr";
 import { AiTwotoneBuild } from "react-icons/ai";
 import styled from "@emotion/styled";
 
-const firstTag = 'rgb(78,87,116)';
+const firstTag = 'rgb(116, 78, 87)';
 const secondTag = 'rgb(48,68,82)';
 const thirdTag = 'rgb(108,55,90)';
 const fourthTag = 'rgb(78, 116, 87)';
+const fifthTag = 'rgb(87, 78, 116)';
 
 const StyledWebIcon = styled(HiOutlineDesktopComputer)({
   fontSize: "2.5rem",
@@ -169,11 +170,11 @@ const projectData = [
         color: firstTag,
       },
       {
-        name: "css",
+        name: "php",
         color: secondTag,
       },
       {
-        name: "html",
+        name: "css",
         color: thirdTag,
       },
       {
