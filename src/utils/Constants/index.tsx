@@ -94,7 +94,7 @@ const projectData = [
     title: "MedPLUS",
     description: "MedPLUS specializes in providing innovative and comprehensive medical professional liability insurance products through financially secure, A.M. Best Rated insurance carriers.",
     githublink: "https://github.com/snyperifle/medPlus",
-    link: "https://github.com/snyperifle/medPlus",
+    link: "https://snyperifle.github.io/medPlus/",
     image: "/workimages/medplusprimary.png",
     tags: [
       {
@@ -115,7 +115,7 @@ const projectData = [
     title: "TDSC",
     description: "TDSC is a shooting club operated out of Houston Texas that brings together gun enthusiasts for self defense classes and range days.",
     githublink: "https://github.com/snyperifle/TDSC",
-    link: "https://github.com/snyperifle/TDSC",
+    link: "https://tdscbeta.netlify.app/",
     image: "/workimages/TDSCprimary.png",
     tags: [
       {
