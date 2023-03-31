@@ -28,6 +28,11 @@ export const Left = styled('div')({
   width: "100%",
   alignItems: "left",
   marginLeft: "10px",
+  '@media (max-width: 468px)': {
+    justifyContent: "center",
+    alignItems: "center",
+    marginLeft: "0px",
+  },
 });
 
 export const Right = styled('div')({
