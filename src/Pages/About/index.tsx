@@ -10,7 +10,7 @@ const About = () => {
       <AboutDiv>
         <DetailsBox>
           <AboutTitle>About.</AboutTitle>
-          <AboutDescription>I have been coding for almost 6 years but recently focused on web development near the end of my education at UTSA, where I graduated with a Bachelor of Science in Computer Science</AboutDescription>
+          <AboutDescription>I have been coding for almost 6 years but recently focused on web development near the end of my education at UTSA, where I graduated with a Bachelor of Science in Computer Science!</AboutDescription>
             <CardContainer>
               {aboutDetails.map((aboutDetail) => (
                 <CardWrapper className="tilting-card-wrapper">

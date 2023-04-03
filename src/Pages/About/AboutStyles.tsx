@@ -58,8 +58,6 @@ export const AboutTitle = styled('h1')({
 });
 
 export const DetailSubTitle = styled('h1')({
-  display: "flex",
-  flexDirection: "row",
   fontSize: "3rem",
   fontWeight: "800",
   textShadow: "0px 0px 10px #000000",
@@ -71,8 +69,6 @@ export const DetailSubTitle = styled('h1')({
 });
 
 export const AboutDescription = styled('h1')({
-  display: "flex",
-  flexDirection: "row",
   textAlign: "center",
   fontSize: "1.2rem",
   fontWeight: "300",
@@ -80,7 +76,7 @@ export const AboutDescription = styled('h1')({
   color: "#e6f1ff",
   marginBottom: "10px",
   '@media (max-width: 768px)': {
-    fontSize: "0.7rem",
+    fontSize: "1rem",
   },
 });
 
@@ -153,7 +149,7 @@ export const DetailTitle = styled('h1')({
   color: "#e6f1ff",
   margin: "0",
   '@media (max-width: 768px)': {
-    fontSize: "1.6rem",
+    fontSize: "1.4rem",
   },
 });
 
@@ -166,6 +162,9 @@ export const DetailDescription = styled('h1')({
   textShadow: "0px 0px 10px #000000",
   color: "#e6f1ff",
   margin: "0",
+  '@media (max-width: 1168px)': {
+    fontSize: "0.85rem",
+  },
   '@media (max-width: 768px)': {
     fontSize: "0.7rem",
   },
