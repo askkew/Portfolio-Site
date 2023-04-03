@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 import { Left, Right, NameTypograph, SubtitleTypograph, HomeDiv, StyledCanvas, RightRight, ResumeStyledButton, ResumeStyledButtonIcon } from "./HomeStyles";
-
 import Description from "../../components/Description";
 import { IoDocumentTextOutline } from "react-icons/io5";
 import Modal from "../../components/Modal";

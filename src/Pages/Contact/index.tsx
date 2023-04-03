@@ -1,8 +1,11 @@
 import { ContactCard, ContactCardMessageTitle, CustomTextField, CustomTextFieldMessage, StyledForm, SendStyledButton, SendStyledButtonIcon, IconWrapper, ContactCardSocialTitle } from "./ContactStyles";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer ,toast } from 'react-toastify';
 import { RiSendPlaneFill } from "react-icons/ri";
 import './contactindex.css';
+import { Button } from "@mui/material";
 
 const Contact = () => {
   const service = process.env.REACT_APP_SERVICE_ID;
@@ -12,7 +15,6 @@ const Contact = () => {
 
   const sendEmail = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
-    console.log('test')
     console.log({service, template, user})
     if (form.current) {
       emailjs
@@ -26,13 +28,43 @@ const Contact = () => {
           (result) => {
             console.log(result.text);
             console.log("message sent");
+            toast.success('Message Sent Successfully!', {
+              position: "top-right",
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "dark",
+              });
           },
           (error) => {
             console.log(error.text);
+            toast.error('Error!', {
+              position: "top-right",
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "dark",
+              });
           }
         );
     } else {
       console.log("Form is not defined");
+      toast.error('Error!', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        });
     }
   };
 
@@ -42,12 +74,13 @@ const Contact = () => {
         <ContactCardMessageTitle>Contact Me</ContactCardMessageTitle>
         {/* @ts-ignore */}
         <StyledForm ref={form}>
-          <CustomTextField placeholder="Name" name="name"/>
-          <CustomTextField placeholder="Email" name="email"/>
+          <CustomTextField placeholder="Name" name="name" id="custominput"/>
+          <CustomTextField placeholder="Email" name="email" id="custominput"/>
           <CustomTextFieldMessage
             placeholder="Write your message"
             name="message"
             rows={10}
+            id="custominput"
           />
           <SendStyledButton type="submit" onClick={sendEmail}>Send</SendStyledButton>
           <SendStyledButtonIcon type="button" onClick={sendEmail}><RiSendPlaneFill /></SendStyledButtonIcon>
