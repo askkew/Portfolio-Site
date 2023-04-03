@@ -64,6 +64,13 @@ const Contact = () => {
             <a onClick={() => window.open('mailto:lucasaoverbey@gmail.com')} className="icon icon--email">
               <i className="ri-mail-line"></i>
             </a>
+            <a onClick={() => {
+              if (window.confirm('Are you sure you want to call this number?')) {
+                window.location.href = 'tel:1-713-806-3597';
+              }
+            }} className="icon icon--phone">
+              <i className="ri-phone-line"></i>
+            </a>
           </IconWrapper>
         </div>
       </ContactCard>

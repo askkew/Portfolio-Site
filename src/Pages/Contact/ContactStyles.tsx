@@ -25,7 +25,7 @@ export const ContactContainer = styled("div")({
 export const ContactCard = styled('form')({
   display: "flex",
   width: 'clamp(40%, 700px, 50%)',
-  maxWidth: "700px",
+  minWidth: "285px",
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
@@ -36,7 +36,10 @@ export const ContactCard = styled('form')({
   boxShadow: 'none',
   gap: '15px',
   paddingBottom: '10px',
-  minWidth: '200px',
+  '@media (max-width: 368px)': {
+    width: '200px',
+    minWidth: '200px',
+  },
 });
 
 export const ContactCardMessageTitle = styled('h1')({
@@ -89,6 +92,9 @@ export const CustomTextField = styled(InputBase)({
   borderRadius: '10px',
   backgroundColor: 'rgb(5,8,22)',
   boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px inset',
+  '@media (max-width: 368px)': {
+    fontSize: '13px',
+  },
 });
 
 export const CustomTextFieldMessage = styled(CustomTextField)({
@@ -129,10 +135,15 @@ export const SendStyledButtonIcon = styled(StyledButton)({
 })
 
 export const IconWrapper = styled('div')({
+  marginBottom: '10px',
   display: 'grid',
-  gridTemplateColumns: 'repeat(3, 1fr)',
+  gridTemplateColumns: 'repeat(4, 1fr)',
   gap: '20px',
   '@media (max-width: 768px)': {
+    gridTemplateColumns: 'repeat(2, 1fr)',
+    gap: '10px',
+  },
+  '@media (max-width: 368px)': {
     gridTemplateColumns: 'repeat(1, 1fr)',
     gap: '10px',
   },

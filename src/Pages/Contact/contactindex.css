@@ -46,6 +46,10 @@
 	background-color: #2ea44f;
 	outline-color: #2ea44f;
 }
+.icon--phone:hover {
+  background-color: #fbbc05;
+  outline-color: #fbbc05;
+}
 
 @keyframes shake {
 	10% {
