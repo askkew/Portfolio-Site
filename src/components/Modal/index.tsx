@@ -39,7 +39,7 @@ const Modal = ({ handleClose, text}) => {
         exit="exit"
         style={{ display: 'flex', flexDirection: 'row'}}
       >
-        <PdfViewer pdfUrl="/LucasResume.pdf" />
+        <PdfViewer pdfUrl="/Luke's Resume.pdf" />
         <IconButton onClick={handleClose} style={{ position: 'absolute', top: 0, right: 0, color: 'white', padding: '5px', backdropFilter: 'blur(10px)', border: '3px white solid'}}>
           <AiOutlineClose size={40}/>
         </IconButton>
