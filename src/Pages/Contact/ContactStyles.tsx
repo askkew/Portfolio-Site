@@ -137,13 +137,9 @@ export const SendStyledButtonIcon = styled(StyledButton)({
 export const IconWrapper = styled('div')({
   marginBottom: '10px',
   display: 'grid',
-  gridTemplateColumns: 'repeat(4, 1fr)',
+  gridTemplateColumns: 'repeat(3, 1fr)',
   gap: '20px',
   '@media (max-width: 768px)': {
-    gridTemplateColumns: 'repeat(2, 1fr)',
-    gap: '10px',
-  },
-  '@media (max-width: 368px)': {
     gridTemplateColumns: 'repeat(1, 1fr)',
     gap: '10px',
   },
