@@ -234,7 +234,7 @@ const projectData = [
     title: "Weather app",
     description: "This is a basic MERN stack application that allows users to get the current weather details as well as the following 6 day forecast for any city.",
     githublink: "https://github.com/askkew/WeatherApp",
-    link: "https://github.com/askkew/WeatherApp",
+    link: "https://weather-app-askew.netlify.app/",
     image: "/workimages/weathertest.png",
     tags: [
       {
