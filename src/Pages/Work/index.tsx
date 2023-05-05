@@ -22,7 +22,7 @@ const Projects = () => {
       <div>
         <ProjectDiv>
           {projectData.map((project, index) => (
-            <Card sx={{ maxWidth: 545, backgroundColor: 'rgb(16,12,40)', padding: '25px' }}>
+            <Card sx={{ maxWidth: 545, backgroundColor: 'rgb(24,24,27)', padding: '25px' }}>
               <CardActions>
                 <LinkGithub href={project.githublink} className="icon2 icon--github2">
                   <i className="ri-github-line"></i>

@@ -6,7 +6,7 @@
 }
 
 :root {
-  --glow-color: hsl(250, 89%, 79%);
+  --glow-color: hsl(195, 89%, 79%);
 }
 
 ::-webkit-scrollbar {
@@ -32,7 +32,7 @@ body {
   overflow: overlay;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Montserrat-Regular',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -54,7 +54,7 @@ section {
 }
 
 #home{
-  background-image: url('https://raw.githubusercontent.com/adrianhajdin/project_3D_developer_portfolio/main/src/assets/herobg.png');
+  /* background-image: url('https://raw.githubusercontent.com/adrianhajdin/project_3D_developer_portfolio/main/src/assets/herobg.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }

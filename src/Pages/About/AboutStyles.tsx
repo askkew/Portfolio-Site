@@ -103,7 +103,7 @@ export const DetailCard = styled('div')({
   flexDirection: 'column',
   justifyContent: 'top',
   alignItems: 'center',
-  backgroundColor: 'rgb(16,12,40)',
+  backgroundColor: 'rgb(24,24,27)',
   boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
   padding: '10px',
   margin: '7px',

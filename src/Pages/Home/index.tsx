@@ -17,7 +17,7 @@ const Home = () => {
     <section id="home">
       <HomeDiv>
         <Left>
-          <NameTypograph>Hi, I'm <span style={{color: 'hsl(250, 89%, 79%)'}}>Lucas</span></NameTypograph>
+          <NameTypograph>Hi, I'm <span style={{color: 'hsl(195, 89%, 79%)'}}>Lucas</span></NameTypograph>
           <Description />
           <ResumeStyledButton type="button" onClick={() => (modalOpen ? close() : open())} >Resume</ResumeStyledButton>
           <ResumeStyledButtonIcon type="button" onClick={() => (modalOpen ? close() : open())} ><IoDocumentTextOutline /></ResumeStyledButtonIcon>

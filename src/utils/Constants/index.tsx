@@ -10,6 +10,7 @@ import mongodb from "./language/mongodb.png";
 import php from "./language/php.png";
 import sql from "./language/sql.png";
 import bootstrap from "./language/bootstrap.png";
+import angular from "./language/angular.png";
 import { HiOutlineDesktopComputer } from "react-icons/hi";
 import { GrReactjs } from "react-icons/gr";
 import { AiTwotoneBuild } from "react-icons/ai";
@@ -65,6 +66,10 @@ const technologies = [
     icon: redux,
   },
   {
+    name: "angular",
+    icon: angular,
+  },
+  {
     name: "java",
     icon: java,
   },
@@ -83,10 +88,6 @@ const technologies = [
   {
     name: "sql",
     icon: sql,
-  },
-  {
-    name: "bootstrap",
-    icon: bootstrap,
   },
 ];
 

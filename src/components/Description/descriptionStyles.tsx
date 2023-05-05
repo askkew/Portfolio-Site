@@ -21,7 +21,7 @@ export const ItemSpan = styled('div')({
   display: 'block',
   height: '100%',
   paddingLeft: '10px',
-  color: 'hsl(250, 89%, 79%)',
+  color: 'hsl(195, 89%, 79%)',
 });
 
 export const Label1 = styled('p')({

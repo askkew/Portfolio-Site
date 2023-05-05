@@ -30,7 +30,7 @@ export const ContactCard = styled('form')({
   justifyContent: "center",
   alignItems: "center",
   paddingTop: '10px',
-  backgroundColor: 'rgb(16,12,40)',
+  backgroundColor: 'rgb(24,24,27)',
   borderRadius: '15px',
   border: 'none',
   boxShadow: 'none',
@@ -90,7 +90,7 @@ export const CustomTextField = styled(InputBase)({
   fontWeight: 'bold',
   fontSize: '15px',
   borderRadius: '10px',
-  backgroundColor: 'rgb(5,8,22)',
+  backgroundColor: 'rgb(24,24,27)',
   boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px inset',
   '@media (max-width: 368px)': {
     fontSize: '13px',
