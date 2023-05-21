@@ -5,11 +5,12 @@ import { IconButton, Button, Link, Typography } from "@mui/material";
 export const StyledFooter = styled("footer")({
   display: "flex",
   flexDirection: "row",
-  justifyContent: "space-between",
+  justifyContent: "space-around",
   alignItems: "center",
-  background: "black",
+  background: "rgb(29,29,32)",
   width: "100%",
-  height: "10%",
+  height: "20%",
+  padding: "15px",
 });
 
 export const DetailTypograph = styled(Typography)({
@@ -23,16 +24,16 @@ export const DetailTypograph = styled(Typography)({
     fontSize: "0.8rem",
     fontWeight: "600",
   },
-  '@media (max-width: 368px)': {
-    display: 'none',
-  },
+  // '@media (max-width: 368px)': {
+  //   display: 'none',
+  // },
 });
 
 export const SocialButtons = styled(RowDiv)({
   display: "flex",
   flexDirection: "row",
-  justifyContent: "left",
-  alignItems: "left",
+  justifyContent: "center",
+  alignItems: "center",
   marginRight: "1rem",
   '@media (max-width: 368px)': {
     display: 'none',

@@ -1,11 +1,10 @@
-import { ContactCard, ContactCardMessageTitle, CustomTextField, CustomTextFieldMessage, StyledForm, SendStyledButton, SendStyledButtonIcon, IconWrapper, ContactCardSocialTitle } from "./ContactStyles";
+import { ContactCard, ContactCardMessageTitle, CustomTextField, CustomTextFieldMessage, StyledForm, SendStyledButton, IconWrapper } from "./ContactStyles";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import 'react-toastify/dist/ReactToastify.css';
-import { ToastContainer ,toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import { RiSendPlaneFill } from "react-icons/ri";
 import './contactindex.css';
-import { Button } from "@mui/material";
 
 const Contact = () => {
   const service = process.env.REACT_APP_SERVICE_ID;
@@ -71,8 +70,8 @@ const Contact = () => {
   return (
     <section id="contact">
       <ContactCard>
-        <ContactCardMessageTitle>Contact Me</ContactCardMessageTitle>
-        {/* @ts-ignore */}
+        <ContactCardMessageTitle>Lets have a chat!</ContactCardMessageTitle>
+        {/* @ts-ignore  */}
         <StyledForm ref={form}>
           <CustomTextField placeholder="Name" name="name" id="custominput"/>
           <CustomTextField placeholder="Email" name="email" id="custominput"/>
@@ -83,9 +82,7 @@ const Contact = () => {
             id="custominput"
           />
           <SendStyledButton type="submit" onClick={sendEmail}>Send</SendStyledButton>
-          <SendStyledButtonIcon type="button" onClick={sendEmail}><RiSendPlaneFill /></SendStyledButtonIcon>
         </StyledForm>
-        <ContactCardSocialTitle>Connect with me</ContactCardSocialTitle>
         <div className="iconwrapper">
           <IconWrapper className="icons">
             <a href="https://github.com/askkew" className="icon icon--github">
@@ -97,13 +94,6 @@ const Contact = () => {
             <a onClick={() => window.open('mailto:lucasaoverbey@gmail.com')} className="icon icon--email">
               <i className="ri-mail-line"></i>
             </a>
-            {/* <a onClick={() => {
-              if (window.confirm('Are you sure you want to call this number?')) {
-                window.location.href = 'tel:1-713-806-3597';
-              }
-            }} className="icon icon--phone">
-              <i className="ri-phone-line"></i>
-            </a> */}
           </IconWrapper>
         </div>
       </ContactCard>
@@ -112,3 +102,35 @@ const Contact = () => {
 };
 
 export default Contact
+
+{/* <ContactCard>
+  <ContactCardMessageTitle>Contact Me</ContactCardMessageTitle>
+  {/* @ts-ignore 
+  <StyledForm ref={form}>
+    <CustomTextField placeholder="Name" name="name" id="custominput"/>
+    <CustomTextField placeholder="Email" name="email" id="custominput"/>
+    <CustomTextFieldMessage
+      placeholder="Write your message"
+      name="message"
+      rows={10}
+      id="custominput"
+    />
+    <SendStyledButton type="submit" onClick={sendEmail}>Send</SendStyledButton>
+    <SendStyledButtonIcon type="button" onClick={sendEmail}><RiSendPlaneFill /></SendStyledButtonIcon>
+  </StyledForm>
+  <ContactCardSocialTitle>Connect with me</ContactCardSocialTitle>
+</ContactCard> */}
+
+// <div className="iconwrapper">
+// <IconWrapper className="icons">
+//   <a href="https://github.com/askkew" className="icon icon--github">
+//     <i className="ri-github-line"></i>
+//   </a>
+//   <a href="https://www.linkedin.com/in/luke-overbey-37b342235/" className="icon icon--linkedin">
+//     <i className="ri-linkedin-box-line"></i>
+//   </a>
+//   <a onClick={() => window.open('mailto:lucasaoverbey@gmail.com')} className="icon icon--email">
+//     <i className="ri-mail-line"></i>
+//   </a>
+// </IconWrapper>
+// </div>

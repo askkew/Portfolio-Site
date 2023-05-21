@@ -97,7 +97,7 @@ const projectData = [
     description: "Silver Armory is a website built to allow Destiny 2 users to view the inventories of other users' Guardians from a database used by over a million players daily.",
     githublink: "https://github.com/askkew/Silver-Armory",
     link: "https://silver-armory.netlify.app/",
-    image: "/workimages/silversecondary.png",
+    image: "/workimages/techlitenew.png",
     tags: [
       {
         name: "react",
@@ -114,11 +114,36 @@ const projectData = [
     ],
   },
   {
+    title: "Destiny Search Engine",
+    description: "This is a search engine built for the game Destiny 2 that allows users to search for items, weapons, and armor in the game.",
+    githublink: "https://github.com/askkew/destiny-search-engine",
+    link: "https://github.com/askkew/destiny-search-engine",
+    image: "/workimages/techlitenew.png",
+    tags: [
+      {
+        name: "react",
+        color: firstTag,
+      },
+      {
+        name: "typescript",
+        color: secondTag,
+      },
+      {
+        name: "nodejs",
+        color: thirdTag,
+      },
+      {
+        name: "mongodb",
+        color: fourthTag,
+      },
+    ],
+  },
+  {
     title: "Portfolio Site",
     description: "This is my portfolio site that is built around ReactJS and Typescript, using many libraries such as ThreeJS and Framer Motion",
     githublink: "https://github.com/askkew/Portfolio-Site",
     link: "https://lucasoverbey.dev",
-    image: "/workimages/testportfolio.png",
+    image: "/workimages/techlitenew.png",
     tags: [
       {
         name: "react",
@@ -143,7 +168,7 @@ const projectData = [
     description: "TDSC is a shooting club operated out of Houston Texas that brings together gun enthusiasts for self defense classes and range days.",
     githublink: "https://github.com/snyperifle/TDSC",
     link: "https://tdscbeta.netlify.app/",
-    image: "/workimages/TDSCtest.png",
+    image: "/workimages/techlitenew.png",
     tags: [
       {
         name: "react",
@@ -164,7 +189,7 @@ const projectData = [
     description: "MedPLUS specializes in providing innovative and comprehensive medical professional liability insurance products through financially secure, A.M. Best Rated insurance carriers.",
     githublink: "https://github.com/snyperifle/medPlus",
     link: "https://snyperifle.github.io/medPlus/",
-    image: "/workimages/medplustest.png",
+    image: "/workimages/techlitenew.png",
     imageSize: 50,
     tags: [
       {
@@ -182,36 +207,11 @@ const projectData = [
     ],
   },
   {
-    title: "Job Tracker",
-    description: "This is a basic MERN stack application that allows users to track their job applications. Using a mongoDB backend to store job applications",
-    githublink: "https://github.com/askkew/Job-Tracker",
-    link: "https://github.com/askkew/Job-Tracker",
-    image: "/workimages/test.png",
-    tags: [
-      {
-        name: "react",
-        color: firstTag,
-      },
-      {
-        name: "typescript",
-        color: secondTag,
-      },
-      {
-        name: "nodejs",
-        color: thirdTag,
-      },
-      {
-        name: "mongodb",
-        color: fourthTag,
-      },
-    ],
-  },
-  {
     title: "Techlite",
     description: "Techlite is an E-commerce website built on the LAMP stack and designed by a team of students as a term project.",
     githublink: "https://github.com/Scrub-Sauce/Scared2Compile",
     link: "https://github.com/Scrub-Sauce/Scared2Compile",
-    image: "/workimages/techlitetest.png",
+    image: "/workimages/techlitenew.png",
     tags: [
       {
         name: "javascript",
@@ -231,31 +231,31 @@ const projectData = [
       },
     ],
   },
-  {
-    title: "Weather app",
-    description: "This is a basic MERN stack application that allows users to get the current weather details as well as the following 6 day forecast for any city.",
-    githublink: "https://github.com/askkew/WeatherApp",
-    link: "https://weather-app-askew.netlify.app/",
-    image: "/workimages/weathertest.png",
-    tags: [
-      {
-        name: "react",
-        color: firstTag,
-      },
-      {
-        name: "typescript",
-        color: secondTag,
-      },
-      {
-        name: "nodejs",
-        color: thirdTag,
-      },
-      {
-        name: "mongodb",
-        color: fourthTag,
-      },
-    ],
-  },
+  // {
+  //   title: "Weather app",
+  //   description: "This is a basic MERN stack application that allows users to get the current weather details as well as the following 6 day forecast for any city.",
+  //   githublink: "https://github.com/askkew/WeatherApp",
+  //   link: "https://weather-app-askew.netlify.app/",
+  //   image: "/workimages/techlitenew.png",
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: firstTag,
+  //     },
+  //     {
+  //       name: "typescript",
+  //       color: secondTag,
+  //     },
+  //     {
+  //       name: "nodejs",
+  //       color: thirdTag,
+  //     },
+  //     {
+  //       name: "mongodb",
+  //       color: fourthTag,
+  //     },
+  //   ],
+  // },
 ]
 
 const aboutDetails = [
@@ -271,7 +271,7 @@ const aboutDetails = [
   },
   {
     title: "Creative design",
-    description: "I am constantly exploring new ideas and experimenting with different approaches to coding, pushing the boundaries of what is possible.",
+    description: "I am constantly exploring new ideas and experimenting with different approaches to development, pushing the boundaries of what is possible.",
     icon: <StyledBuildIcon />,
   },
 ]

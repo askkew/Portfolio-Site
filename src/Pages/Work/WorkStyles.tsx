@@ -8,13 +8,22 @@ export const ProjectContainer = styled('div')({
 });
 
 export const ProjectDiv = styled('div')({
-  display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
   justifyItems: 'center',
   justifyContent: 'center',
   gap: '20px',
+  display: 'grid',
+  gridTemplateColumns: 'repeat(3, 1fr)',
 });
+
+export const ProjectCard = styled(Card)({
+  width: '400px',
+  // height: '0px',
+  borderRadius: '15px',
+  backgroundColor: 'rgb(24,24,27)',
+  padding: '15px',
+})
 
 export const WorkIntroDiv = styled('div')({
   display: 'flex',
@@ -81,16 +90,10 @@ export const ProjectTagFour = styled('h1')({
 });
 
 export const TagsDiv = styled('div')({
-  display: 'grid',
-  gridTemplateColumns: 'repeat(3, 1fr)',
-  justifyContent: 'center',
+  display: 'flex',
+  flexDirection: 'row',
+  justifyContent: 'space-around',
   alignItems: 'center',
-  '& > *:nth-child(4)': {
-    gridColumnStart: '2',
-    gridColumnEnd: '2',
-    gridRowStart: '2',
-    gridRowEnd: '2',
-  },
 });
 
 export const TagP = styled('p')({

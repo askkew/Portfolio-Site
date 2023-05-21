@@ -76,6 +76,6 @@ export const StyledDrawer = styled(Drawer)({
 })
 
 export const StyledMenuIcon = styled(MenuIcon)({
-  color: "hsl(250, 89%, 79%)",
+  color: "hsl(195, 89%, 79%)",
   transform: "scale(2)",
 });

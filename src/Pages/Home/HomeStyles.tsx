@@ -9,7 +9,7 @@ export const HomeDiv = styled('div')({
   justifyItems: "center",
   alignItems: "center",
   height: '100%',
-  width: '700px',
+  width: '400px',
   '@media (max-width: 1068px)': {
     height: '50%',
     flexDirection: 'column',
@@ -35,29 +35,6 @@ export const Left = styled('div')({
   },
 });
 
-export const Right = styled('div')({
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "flex-start",
-  height: "100%",
-  minWidth: "50%",
-  width: "100%",
-  '@media (max-width: 768px)': {
-    // display: "none",
-  },
-});
-
-export const RightRight = styled('div')({
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "flex-start",
-  height: "100%",
-  width: "20%",
-  '@media (max-width: 768px)': {
-    display: "none",
-  },
-})
-
 export const NameTypograph = styled('h1')({
   fontSize: '3.6em',
   fontWeight: '1500',
@@ -67,6 +44,7 @@ export const NameTypograph = styled('h1')({
   '@media (max-width: 368px)': {
     fontSize: "1.6rem",
   },
+  wrap: "nowrap",
 });
 
 export const SubtitleTypograph = styled('h1')({
@@ -79,18 +57,7 @@ export const SubtitleTypograph = styled('h1')({
   '@media (max-width: 768px)': {
     fontSize: "1rem",
   },
-});
-
-export const StyledCanvas = styled(Canvas)({
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "flex-start",
-  minWidth: "50%",
-  '@media (max-width: 768px)': {
-    // display: "none",
-  },
-});
+})
 
 export const ResumeStyledButton = styled(StyledButton)({
   marginTop: "5px",
