@@ -15,6 +15,12 @@ export const ProjectDiv = styled('div')({
   gap: '20px',
   display: 'grid',
   gridTemplateColumns: 'repeat(3, 1fr)',
+  '@media (max-width: 1268px)': {
+    gridTemplateColumns: 'repeat(2, 1fr)',
+  },
+  '@media (max-width: 768px)': {
+    gridTemplateColumns: 'repeat(1, 1fr)',
+  }
 });
 
 export const ProjectCard = styled(Card)({
@@ -156,9 +162,4 @@ export const LinkGithub = styled('a')({
 
 export const LinkLink = styled('a')({
   backdropFilter: 'blur(2px)',
-  marginLeft: '150px',
-  marginTop: '10px',
-  '@media (max-width: 368px)': {
-    marginLeft: '90px',
-  },
 });

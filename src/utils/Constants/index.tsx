@@ -97,7 +97,7 @@ const projectData = [
     description: "Silver Armory is a website built to allow Destiny 2 users to view the inventories of other users' Guardians from a database used by over a million players daily.",
     githublink: "https://github.com/askkew/Silver-Armory",
     link: "https://silver-armory.netlify.app/",
-    image: "/workimages/silverarmory2.png",
+    image: "/workimages/silverarmoryfinal.png",
     imagesize: 200,
     tags: [
       {
@@ -119,7 +119,7 @@ const projectData = [
     description: "D2items is an item search app for the game Destiny 2 that allows users to search for items, weapons, and armor in the game.",
     githublink: "https://github.com/askkew/destiny-search-engine",
     link: "https://github.com/askkew/destiny-search-engine",
-    image: "/workimages/techlitenew.png",
+    image: "/workimages/silverarmory2.png",
     imagesize: 200,
     tags: [
       {
