@@ -7,7 +7,7 @@ export const StyledFooter = styled("footer")({
   flexDirection: "row",
   justifyContent: "space-around",
   alignItems: "center",
-  background: "rgb(29,29,32)",
+  background: "rgb(24,24,27)",
   width: "100%",
   height: "20%",
   padding: "15px",

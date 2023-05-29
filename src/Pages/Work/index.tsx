@@ -24,7 +24,7 @@ const Projects = () => {
         {projectData.map((project, index) => (
           <ProjectCard>
             <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
-              <img src={project.image} style={{width: '100%', height: '80%', borderRadius: '15px'}}/>
+              <img src={project.image} height={project.imagesize} style={{borderRadius: '15px'}}/>
             </div>
             <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '10px'}}>
               <Typography gutterBottom variant="h5" component="div" sx={{color: 'gainsboro'}}>
