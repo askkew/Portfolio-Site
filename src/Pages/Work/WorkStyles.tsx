@@ -34,8 +34,7 @@ export const ProjectCard = styled(Card)({
 export const WorkIntroDiv = styled('div')({
   display: 'flex',
   flexDirection: 'column',
-  justifyContent: 'center',
-  alignItems: 'center',
+  justifyContent: 'left',
   marginBottom: '50px',
 });
 

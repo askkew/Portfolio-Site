@@ -6,13 +6,13 @@ const Description = () => {
   return (
     <Container1 className="container1">
       <Wrapper className="wrapper">
-        <Label1>I'm a </Label1>
+        {/* <Label1>I'm a </Label1> */}
         <Words className="words">
-          <ItemSpan className="itemspan">Designer</ItemSpan>
-          <ItemSpan className="itemspan">Developer</ItemSpan>
-          <ItemSpan className="itemspan">Creator</ItemSpan>
-          <ItemSpan className="itemspan">Team player</ItemSpan>
-          <ItemSpan className="itemspan">Designer</ItemSpan>
+          <ItemSpan className="itemspan">&lt;Designer/&gt;</ItemSpan>
+          <ItemSpan className="itemspan">&lt;Developer/&gt;</ItemSpan>
+          <ItemSpan className="itemspan">&lt;Creator/&gt;</ItemSpan>
+          <ItemSpan className="itemspan">&lt;Team player/&gt;</ItemSpan>
+          <ItemSpan className="itemspan">&lt;Designer/&gt;</ItemSpan>
         </Words>
       </Wrapper>
     </Container1>

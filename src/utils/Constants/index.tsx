@@ -119,7 +119,7 @@ const projectData = [
     description: "D2items is an item search app for the game Destiny 2 that allows users to search for items, weapons, and armor in the game.",
     githublink: "https://github.com/askkew/destiny-search-engine",
     link: "https://github.com/askkew/destiny-search-engine",
-    image: "/workimages/silverarmory2.png",
+    image: "/workimages/d2itemsfinal.png",
     imagesize: 200,
     tags: [
       {
